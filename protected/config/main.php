@@ -48,9 +48,7 @@ return array(
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
-				'post/<id:\d+>/<title:.*?>'=>'post/view',
-				'posts/<tag:.*?>'=>'post/index',
-				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+				''=>'site/index',
 			),
 		),
 		'log'=>array(

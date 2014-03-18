@@ -1,0 +1,32 @@
+2014/03/18 12:45:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "post".' in /var/www/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/champions-league/
+---
+2014/03/18 12:46:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "post".' in /var/www/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/champions-league/
+---
+2014/03/18 12:46:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "post".' in /var/www/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/champions-league/
+---
+2014/03/18 12:47:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "post".' in /var/www/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/champions-league/
+---
