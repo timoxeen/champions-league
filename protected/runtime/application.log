@@ -406,3 +406,217 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/gii
 ---
+2014/03/19 18:06:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /usr/share/nginx/html/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /usr/share/nginx/html/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/19 18:06:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "league".' in /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('league')
+#1 /usr/share/nginx/html/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /usr/share/nginx/html/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/league
+HTTP_REFERER=http://www.cl.com/
+---
+2014/03/19 18:07:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "team".' in /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('team')
+#1 /usr/share/nginx/html/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /usr/share/nginx/html/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/team
+HTTP_REFERER=http://www.cl.com/
+---
+2014/03/19 18:07:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "team".' in /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('team')
+#1 /usr/share/nginx/html/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /usr/share/nginx/html/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/team
+HTTP_REFERER=http://www.cl.com/
+---
+2014/03/19 18:07:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "team".' in /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('team')
+#1 /usr/share/nginx/html/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /usr/share/nginx/html/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/team
+HTTP_REFERER=http://www.cl.com/
+---
+2014/03/19 18:08:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "team".' in /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('team')
+#1 /usr/share/nginx/html/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /usr/share/nginx/html/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/team
+HTTP_REFERER=http://www.cl.com/
+---
+2014/03/19 18:08:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "team".' in /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('team')
+#1 /usr/share/nginx/html/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /usr/share/nginx/html/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/team
+HTTP_REFERER=http://www.cl.com/
+---
+2014/03/19 18:12:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "team".' in /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('team')
+#1 /usr/share/nginx/html/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /usr/share/nginx/html/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/team
+HTTP_REFERER=http://www.cl.com/
+---
+2014/03/19 18:12:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "team".' in /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('team')
+#1 /usr/share/nginx/html/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /usr/share/nginx/html/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/team
+HTTP_REFERER=http://www.cl.com/
+---
+2014/03/19 18:12:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "team".' in /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('team')
+#1 /usr/share/nginx/html/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /usr/share/nginx/html/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/team
+HTTP_REFERER=http://www.cl.com/site
+---
+2014/03/19 18:13:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "team".' in /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('team')
+#1 /usr/share/nginx/html/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /usr/share/nginx/html/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/team
+HTTP_REFERER=http://www.cl.com/site
+---
+2014/03/19 18:13:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "team".' in /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('team')
+#1 /usr/share/nginx/html/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /usr/share/nginx/html/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/team
+HTTP_REFERER=http://www.cl.com/site
+---
+2014/03/19 18:13:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "league".' in /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('league')
+#1 /usr/share/nginx/html/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /usr/share/nginx/html/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/league
+HTTP_REFERER=http://www.cl.com/team
+---
+2014/03/19 18:13:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "league".' in /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('league')
+#1 /usr/share/nginx/html/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /usr/share/nginx/html/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/league
+HTTP_REFERER=http://www.cl.com/league
+---
+2014/03/19 18:13:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "league".' in /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('league')
+#1 /usr/share/nginx/html/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /usr/share/nginx/html/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/league
+HTTP_REFERER=http://www.cl.com/league
+---
+2014/03/19 18:14:54 [error] [exception.CException] exception 'CException' with message 'LeagueController cannot find the requested view "index".' in /usr/share/nginx/html/champions-league/framework/web/CController.php:878
+Stack trace:
+#0 /usr/share/nginx/html/champions-league/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /usr/share/nginx/html/champions-league/protected/controllers/LeagueController.php(16): CController->render('index')
+#2 /usr/share/nginx/html/champions-league/framework/web/actions/CInlineAction.php(49): LeagueController->actionIndex()
+#3 /usr/share/nginx/html/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /usr/share/nginx/html/champions-league/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /usr/share/nginx/html/champions-league/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('league/index')
+#8 /usr/share/nginx/html/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /usr/share/nginx/html/champions-league/index.php(11): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2014/03/19 18:14:57 [error] [exception.CException] exception 'CException' with message 'LeagueController cannot find the requested view "index".' in /usr/share/nginx/html/champions-league/framework/web/CController.php:878
+Stack trace:
+#0 /usr/share/nginx/html/champions-league/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /usr/share/nginx/html/champions-league/protected/controllers/LeagueController.php(16): CController->render('index')
+#2 /usr/share/nginx/html/champions-league/framework/web/actions/CInlineAction.php(49): LeagueController->actionIndex()
+#3 /usr/share/nginx/html/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /usr/share/nginx/html/champions-league/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /usr/share/nginx/html/champions-league/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(282): CController->run('')
+#7 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('league')
+#8 /usr/share/nginx/html/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /usr/share/nginx/html/champions-league/index.php(11): CApplication->run()
+#10 {main}
+REQUEST_URI=/league
+HTTP_REFERER=http://www.cl.com/
+---
+2014/03/19 18:15:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "team".' in /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('team')
+#1 /usr/share/nginx/html/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /usr/share/nginx/html/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/team
+HTTP_REFERER=http://www.cl.com/league
+---
+2014/03/19 18:51:01 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/usr/share/nginx/html/champions-league/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /usr/share/nginx/html/champions-league/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /usr/share/nginx/html/champions-league/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/usr/share/ngin...')
+#1 /usr/share/nginx/html/champions-league/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /usr/share/nginx/html/champions-league/framework/gii/GiiModule.php(143): CAssetManager->publish('/usr/share/ngin...')
+#3 /usr/share/nginx/html/champions-league/framework/base/CComponent.php(111): GiiModule->getAssetsUrl()
+#4 /usr/share/nginx/html/champions-league/framework/base/CModule.php(105): CComponent->__get('assetsUrl')
+#5 /usr/share/nginx/html/champions-league/framework/gii/views/layouts/main.php(5): CModule->__get('assetsUrl')
+#6 /usr/share/nginx/html/champions-league/framework/web/CBaseController.php(126): require('/usr/share/ngin...')
+#7 /usr/share/nginx/html/champions-league/framework/web/CBaseController.php(95): CBaseController->renderInternal('/usr/share/ngin...', Array, true)
+#8 /usr/share/nginx/html/champions-league/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/usr/share/ngin...', Array, true)
+#9 /usr/share/nginx/html/champions-league/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div class="con...')
+#10 /usr/share/nginx/html/champions-league/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div class="con...')
+#11 /usr/share/nginx/html/champions-league/framework/web/CBaseController.php(206): COutputProcessor->run()
+#12 /usr/share/nginx/html/champions-league/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#13 /usr/share/nginx/html/champions-league/framework/gii/views/layouts/column1.php(7): CBaseController->endContent()
+#14 /usr/share/nginx/html/champions-league/framework/web/CBaseController.php(126): require('/usr/share/ngin...')
+#15 /usr/share/nginx/html/champions-league/framework/web/CBaseController.php(95): CBaseController->renderInternal('/usr/share/ngin...', Array, true)
+#16 /usr/share/nginx/html/champions-league/framework/web/CController.php(784): CBaseController->renderFile('/usr/share/ngin...', Array, true)
+#17 /usr/share/nginx/html/champions-league/framework/gii/controllers/DefaultController.php(47): CController->render('login', Array)
+#18 /usr/share/nginx/html/champions-league/framework/web/actions/CInlineAction.php(49): DefaultController->actionLogin()
+#19 /usr/share/nginx/html/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#20 /usr/share/nginx/html/champions-league/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#21 /usr/share/nginx/html/champions-league/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(282): CController->run('login')
+#23 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/default/log...')
+#24 /usr/share/nginx/html/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#25 /usr/share/nginx/html/champions-league/index.php(11): CApplication->run()
+#26 {main}
+REQUEST_URI=/gii/default/login
+---
+2014/03/19 19:01:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "team".' in /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('team')
+#1 /usr/share/nginx/html/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /usr/share/nginx/html/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/team
+HTTP_REFERER=http://www.cl.com/
+---
