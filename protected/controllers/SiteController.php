@@ -6,16 +6,19 @@
 class SiteController extends CController
 {	
 
-	public $layout='//layouts/main';
+	public $layout='//layouts/main-layout';
 
 	/**
 	 * Index action is the default action in a controller.
 	 */
 	public function actionIndex()
 	{
-		
-
 		$this->render('index');
+	}
+
+	public function actionTest()
+	{
+		die("test");
 	}
 
 	/**

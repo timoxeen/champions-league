@@ -20,6 +20,14 @@ return array(
 
 	'defaultController'=>'site',
 
+	'modules'=>array(
+        'gii'=>array(
+            'class'=>'system.gii.GiiModule',
+            'password'=>'121212',
+            'ipFilters'=>array('127.0.0.1','192.168.1.14','::1'),
+        ),
+    ),
+
 	// application components
 	'components'=>array(
 		'user'=>array(
@@ -47,8 +55,13 @@ return array(
 		),
 		'urlManager'=>array(
 			'urlFormat'=>'path',
+			'showScriptName'=>false,
+			'caseSensitive'=>false, 
 			'rules'=>array(
 				''=>'site/index',
+				/*'gii'=>'gii',
+	            'gii/<controller:\w+>'=>'gii/<controller>',
+	            'gii/<controller:\w+>/<action:\w+>'=>'gii/<controller>/<action>',*/
 			),
 		),
 		'log'=>array(
