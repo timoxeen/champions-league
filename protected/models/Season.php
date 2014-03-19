@@ -98,4 +98,14 @@ class Season extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+	public function getAll()
+	{
+		return Season::model()->findAll();
+	}
+
+	public function isExists()
+	{
+		return Season::model()->exists();
+	}
 }

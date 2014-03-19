@@ -59,6 +59,8 @@ return array(
 			'caseSensitive'=>false, 
 			'rules'=>array(
 				''=>'league/index',
+				'league/next-week' => 'league/nextWeek',
+				'league/play-all-season' => 'league/playAllSeason',
 				/*'gii'=>'gii',
 	            'gii/<controller:\w+>'=>'gii/<controller>',
 	            'gii/<controller:\w+>/<action:\w+>'=>'gii/<controller>/<action>',*/

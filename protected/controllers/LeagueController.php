@@ -1,24 +1,62 @@
 <?php
 
-/**
- * SiteController is the default controller to handle user requests.
- */
 class LeagueController extends CController
-{	
-
+{
 	public $layout='//layouts/layout-with-nav';
+	private $data = array();
 
-	/**
-	 * Index action is the default action in a controller.
-	 */
 	public function actionIndex()
 	{
-		$this->render('index');
+		$isSessionExists	=	Season::model()->isExists();
+
+		if(FALSE === $isSessionExists)
+		{
+			$this->render('no-season');
+		}
+		else 
+		{
+			$this->render('week', array('data'=>$data));
+		}
+
 	}
 
-	public function actionTest()
+	public function actionNextWeek()
 	{
-		die("test");
+
+	}
+
+	public function actionPlayAllSeason()
+	{
+
+		$transaction = Yii::app()->db->beginTransaction();
+
+		try {
+
+			$isSessionExists	=	Season::model()->isExists();
+
+			if(FALSE === $isSessionExists)
+			{
+				// create season
+				$season 			=	new Season;
+				$season->title 		=	'1. Season';
+				$season->save();
+
+				// create week
+				
+
+				$transaction->commit();
+			}
+			else 
+			{
+
+			}
+
+		} catch (Exception $ex) {
+            $transaction->rollback();
+            Yii::log('LeagueController -> actionPlayAllSeason: '.$e->getMessage(), \CLogger::LEVEL_ERROR, 'core.models.store.Order');
+            die('Error: ' . $e->getMessage());
+        }
+
 	}
 
 	/**
@@ -36,4 +74,31 @@ class LeagueController extends CController
 	        	$this->render('error', $error);
 	    }
 	}
+
+	// Uncomment the following methods and override them if needed
+	/*
+	public function filters()
+	{
+		// return the filter configuration for this controller, e.g.:
+		return array(
+			'inlineFilterName',
+			array(
+				'class'=>'path.to.FilterClass',
+				'propertyName'=>'propertyValue',
+			),
+		);
+	}
+
+	public function actions()
+	{
+		// return external action classes, e.g.:
+		return array(
+			'action1'=>'path.to.ActionClass',
+			'action2'=>array(
+				'class'=>'path.to.AnotherActionClass',
+				'propertyName'=>'propertyValue',
+			),
+		);
+	}
+	*/
 }
