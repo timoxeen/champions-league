@@ -7,9 +7,9 @@ class LeagueController extends CController
 
 	public function actionIndex()
 	{
-		$isSessionExists	=	Season::model()->isExists();
+		$isSeasonExists	=	Season::model()->isExists();
 
-		if(FALSE === $isSessionExists)
+		if(FALSE === $isSeasonExists)
 		{
 			$this->render('no-season');
 		}
@@ -27,22 +27,22 @@ class LeagueController extends CController
 
 	public function actionPlayAllSeason()
 	{
-
 		$transaction = Yii::app()->db->beginTransaction();
 
 		try {
 
-			$isSessionExists	=	Season::model()->isExists();
+			$isSeasonExists	=	Season::model()->isExists();
 
-			if(FALSE === $isSessionExists)
+			if(FALSE === $isSeasonExists)
 			{
-				// create season
-				$season 			=	new Season;
-				$season->title 		=	'1. Season';
-				$season->save();
+				// create new season
+				$seasonId 	=	Season::model()->createNewSeason();				
 
-				// create week
+				// create all weeks for season
+				$weekIds 	= 	Week::model()->createSeasonAllWeekBySeasonId($seasonId);
 				
+				// create fixtures for season 
+				Fixture::model()->createSeasonAllFixtureWithWeekIds($weekIds);
 
 				$transaction->commit();
 			}

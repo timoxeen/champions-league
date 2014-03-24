@@ -1,0 +1,248 @@
+2014/03/24 10:16:21 [error] [php] Undefined variable: data (/var/www/champions-league/protected/controllers/LeagueController.php:18)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#1 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#2 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/
+2014/03/24 10:16:38 [error] [php] Undefined variable: data (/var/www/champions-league/protected/controllers/LeagueController.php:18)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#1 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#2 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/
+2014/03/24 11:55:57 [error] [php] Undefined variable: 6 (/var/www/champions-league/protected/models/Fixture.php:124)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#2 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 11:57:55 [error] [php] Undefined variable: 6 (/var/www/champions-league/protected/models/Fixture.php:124)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#2 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 11:58:09 [error] [php] Undefined variable: 6 (/var/www/champions-league/protected/models/Fixture.php:124)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#2 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 11:58:19 [error] [php] Undefined variable: 6 (/var/www/champions-league/protected/models/Fixture.php:124)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#2 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 11:58:31 [error] [php] Undefined variable: 6 (/var/www/champions-league/protected/models/Fixture.php:124)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#2 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 12:16:34 [error] [php] Undefined variable: x (/var/www/champions-league/protected/controllers/LeagueController.php:31)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#1 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#2 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 12:17:20 [error] [php] Undefined variable: teams_ary (/var/www/champions-league/protected/controllers/LeagueController.php:33)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#1 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#2 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 12:17:46 [error] [php] Undefined offset: 6 (/var/www/champions-league/protected/controllers/LeagueController.php:42)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#1 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#2 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 12:17:51 [error] [php] Undefined offset: 5 (/var/www/champions-league/protected/controllers/LeagueController.php:42)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#1 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#2 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 12:18:16 [error] [php] Undefined offset: 3 (/var/www/champions-league/protected/controllers/LeagueController.php:42)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#1 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#2 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 12:18:40 [error] [php] Undefined offset: 10 (/var/www/champions-league/protected/controllers/LeagueController.php:42)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#1 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#2 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 12:18:41 [error] [php] Undefined offset: 10 (/var/www/champions-league/protected/controllers/LeagueController.php:42)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#1 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#2 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 12:21:28 [error] [php] Undefined offset: 10 (/var/www/champions-league/protected/controllers/LeagueController.php:42)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#1 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#2 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 12:21:29 [error] [php] Undefined offset: 10 (/var/www/champions-league/protected/controllers/LeagueController.php:42)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#1 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#2 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 12:22:21 [error] [php] Undefined offset: 10 (/var/www/champions-league/protected/controllers/LeagueController.php:43)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#1 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#2 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 12:25:05 [error] [php] Undefined offset: 10 (/var/www/champions-league/protected/controllers/LeagueController.php:43)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#1 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#2 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 12:25:42 [error] [php] Undefined offset: 11 (/var/www/champions-league/protected/controllers/LeagueController.php:47)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#1 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#2 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 12:48:47 [error] [php] Use of undefined constant ENVIRONMENT - assumed 'ENVIRONMENT' (/var/www/champions-league/protected/components/Helpers.php:19)
+Stack trace:
+#0 /var/www/champions-league/protected/controllers/LeagueController.php(45): Fixture->createSeasonAllFixtureWithWeekIds()
+#1 /var/www/champions-league/framework/web/actions/CInlineAction.php(49): LeagueController->actionPlayAllSeason()
+#2 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#4 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#5 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#6 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 12:54:27 [error] [php] Illegal offset type (/var/www/champions-league/protected/models/Fixture.php:132)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#2 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 13:03:10 [error] [php] Invalid argument supplied for foreach() (/var/www/champions-league/protected/models/Fixture.php:146)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#2 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 13:03:34 [error] [php] Invalid argument supplied for foreach() (/var/www/champions-league/protected/models/Fixture.php:148)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#2 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 13:04:39 [error] [php] Invalid argument supplied for foreach() (/var/www/champions-league/protected/models/Fixture.php:148)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#2 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 13:05:18 [error] [php] Invalid argument supplied for foreach() (/var/www/champions-league/protected/models/Fixture.php:148)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#2 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 13:05:34 [error] [php] Invalid argument supplied for foreach() (/var/www/champions-league/protected/models/Fixture.php:148)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#2 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season

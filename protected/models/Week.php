@@ -1,24 +1,27 @@
 <?php
 
 /**
- * This is the model class for table "season".
+ * This is the model class for table "week".
  *
- * The followings are the available columns in table 'season':
+ * The followings are the available columns in table 'week':
+ * @property integer $week_id
  * @property integer $season_id
  * @property string $title
  * @property string $status
  *
  * The followings are the available model relations:
- * @property Week[] $weeks
+ * @property Fixture[] $fixtures
+ * @property LeagueTable[] $leagueTables
+ * @property Season $season
  */
-class Season extends CActiveRecord
+class Week extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'season';
+		return 'week';
 	}
 
 	/**
@@ -29,11 +32,13 @@ class Season extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
+			array('season_id', 'required'),
+			array('season_id', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>255),
-			array('status', 'length', 'max'=>9),
+			array('status', 'length', 'max'=>13),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('season_id, title, status', 'safe', 'on'=>'search'),
+			array('week_id, season_id, title, status', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -45,7 +50,9 @@ class Season extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'weeks' => array(self::HAS_MANY, 'Week', 'season_id'),
+			'fixtures' => array(self::HAS_MANY, 'Fixture', 'week_id'),
+			'leagueTables' => array(self::HAS_MANY, 'LeagueTable', 'week_id'),
+			'season' => array(self::BELONGS_TO, 'Season', 'season_id'),
 		);
 	}
 
@@ -55,6 +62,7 @@ class Season extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
+			'week_id' => 'Week',
 			'season_id' => 'Season',
 			'title' => 'Title',
 			'status' => 'Status',
@@ -79,6 +87,7 @@ class Season extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
+		$criteria->compare('week_id',$this->week_id);
 		$criteria->compare('season_id',$this->season_id);
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('status',$this->status,true);
@@ -92,29 +101,29 @@ class Season extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Season the static model class
+	 * @return Week the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
 	}
 
-	public function getAll()
+	public function createSeasonAllWeekBySeasonId($seasonId)
 	{
-		return Season::model()->findAll();
-	}
+		$teamCount 	=	Team::model()->count();
+		$weekIds 	=	array();
+		$allWeeks 	=	Helpers::getSeasonWeekCount($teamCount);
 
-	public function isExists()
-	{
-		return Season::model()->exists();
-	}
+		for($i=1; $i<=$allWeeks; $i++)
+		{
+			$week 	=	new Week;
+			$week->season_id 	=	$seasonId;
+			$week->title 		=	'Week - ' . $i;
+			$week->save();
 
-	public function createNewSeason()
-	{
-		$season 			=	new Season;
-		$season->title 		=	'1. Season';
-		$season->save();
+			$weekIds[]	=	$week->week_id;
+		}
 
-		return $season->season_id;
+		return $weekIds;
 	}
 }

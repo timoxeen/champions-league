@@ -15,6 +15,8 @@ class m140319_073336_fixture extends CDbMigration
 				  'away_team_id' => "int(11) NOT NULL REFERENCES team(team_id)",
 				  'home_team_goal' => "smallint(5) unsigned NOT NULL DEFAULT '0'",
 				  'away_team_goal' => "smallint(5) unsigned NOT NULL DEFAULT '0'",
+				  'home_team_power' => "smallint(3) unsigned NOT NULL DEFAULT '0'",
+				  'away_team_power' => "smallint(3) unsigned NOT NULL DEFAULT '0'",
 				  'status' => 'enum("not-completed","completed") NOT NULL DEFAULT "not-completed"'
 			),
 			$this->optionsForInnoDb

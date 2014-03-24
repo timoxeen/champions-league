@@ -115,4 +115,48 @@ class Fixture extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+	public function createSeasonAllFixtureWithWeekIds($weekIds)
+	{
+Helpers::printPre($weekIds);
+		$teamIds 	=	Team::model()->getIds();
+		$seasonFixture 	=	Helpers::scheduler($teamIds);
+Helpers::printPre($seasonFixture);
+
+		$weekIndex = 0;
+
+		// first half
+		foreach($seasonFixture as $rowWeek)
+		{
+			foreach($rowWeek as $matchesIndex => $matchesRow)
+			{
+				$fixture 					=	new Fixture;
+				$fixture->week_id 			=	$weekIds[$weekIndex];
+				$fixture->home_team_id		=	$rowWeek[$matchesIndex]['home'];
+				$fixture->away_team_id		=	$rowWeek[$matchesIndex]['away'];
+				$fixture->home_team_power	=	Helpers::getTeamPower();
+				$fixture->away_team_power	=	Helpers::getTeamPower();
+				$fixture->save();
+			}
+
+			$weekIndex++;
+		}
+
+		// second half
+		foreach($seasonFixture as $rowWeek)
+		{
+			foreach($rowWeek as $matchesIndex => $matchesRow)
+			{
+				$fixture 					=	new Fixture;
+				$fixture->week_id 			=	$weekIds[$weekIndex];
+				$fixture->home_team_id		=	$rowWeek[$matchesIndex]['away'];
+				$fixture->away_team_id		=	$rowWeek[$matchesIndex]['home'];
+				$fixture->home_team_power	=	Helpers::getTeamPower();
+				$fixture->away_team_power	=	Helpers::getTeamPower();
+				$fixture->save();
+			}
+
+			$weekIndex++;
+		}
+	}
 }

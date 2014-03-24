@@ -98,4 +98,17 @@ class Team extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+	public function getIds()
+	{
+		$list 		=	Team::model()->findAll();
+		$results 	=	array();
+		
+		foreach ($list as $row) 
+		{
+			$results[]	=	$row->team_id;
+		}
+
+		return $results;
+	}
 }
