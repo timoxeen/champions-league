@@ -75,6 +75,16 @@ class LeagueTable extends CActiveRecord
 		);
 	}
 
+	public function scopes()
+    {
+		return array(
+	            'lastOne'=>array(
+	            	'order' => 'points DESC, goal_difference DESC',
+	                'limit'=>1,
+	            ),
+	        );
+	}
+
 	/**
 	 * Retrieves a list of models based on the current search/filter conditions.
 	 *
@@ -209,5 +219,18 @@ class LeagueTable extends CActiveRecord
 		$data 	= 	LeagueTable::model()->find($criteria);			
 
 		return $data;
+	}
+
+	public function getSeasonChampion($seasonId)
+	{
+		$seasonLastWeekId 	=	Week::model()->getLastWeekIdBySeasonId($seasonId);
+
+		$condition 	=	'week_id=:week_id';
+		$param 		=	array(':week_id' => $seasonLastWeekId);
+		$data 		=	LeagueTable::model()->lastOne()->find($condition, $param);
+
+		$championTeam 	=	$data->team->title;
+
+		return $championTeam;
 	}
 }

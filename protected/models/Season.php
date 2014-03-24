@@ -63,6 +63,16 @@ class Season extends CActiveRecord
 		);
 	}
 
+	public function scopes()
+    {
+        return array(
+            'lastOne'=>array(
+                'order'=>'season_id DESC',
+                'limit'=>1,
+            ),
+        );
+    }
+
 	/**
 	 * Retrieves a list of models based on the current search/filter conditions.
 	 *
@@ -128,10 +138,22 @@ class Season extends CActiveRecord
 		return $data;
 	}
 
-	public function createNewSeason()
+	public function getActiveSeason()
 	{
+		$conditions 	= 	'season_id=:season_id AND status=:status';
+		$params 		= 	array(':season_id' => $seasonId, ':status' => self::STATUS_ACTIVE);
+
+		$data 	=	Season::model()->find($conditions, $params);
+
+		return $data;
+	}
+
+	public function createNewSeason($lastSeasonId)
+	{
+		$newSeasonId 	= 	$lastSeasonId+1;
+
 		$season 			=	new Season;
-		$season->title 		=	'Season: 1';
+		$season->title 		=	'Season: ' . $newSeasonId;
 		$season->save();
 
 		return $season->season_id;
@@ -139,12 +161,19 @@ class Season extends CActiveRecord
 
 	public function completeSeason($seasonId)
 	{
-		$attributes = 	array('status' => self::STATUS_COMPLETED);
+		$attributes 	= 	array('status' => self::STATUS_COMPLETED);
+		$conditions 	= 	'season_id=:season_id AND status=:status';
+		$params 		= 	array(':season_id' => $seasonId, ':status' => self::STATUS_ACTIVE);
 
-		$condition 	= 	'season_id=:season_id AND status=:status';
+		Season::model()->updateAll($attributes, $conditions, $params);
+	}
 
-		$params 	= 	array(':season_id' => $seasonId, ':status' => self::STATUS_ACTIVE);
+	public function getLastCompletedSeason()
+	{
+		$conditions  	= 	'status=:status';
+		$params 		= 	array(':status' => self::STATUS_COMPLETED);
+		$data 			=	Season::model()->lastOne()->find($conditions, $params);
 
-		Season::model()->updateAll($attributes, $condition, $params);
+		return $data;
 	}
 }

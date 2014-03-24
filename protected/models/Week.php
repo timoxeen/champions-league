@@ -74,6 +74,17 @@ class Week extends CActiveRecord
 		);
 	}
 
+	public function scopes()
+    {
+        return array(
+            'lastOne'=>array(
+            	'select'=>array('week_id'),
+                'order'=>'week_id DESC',
+                'limit'=>1,
+            ),
+        );
+    }
+
 	/**
 	 * Retrieves a list of models based on the current search/filter conditions.
 	 *
@@ -153,5 +164,14 @@ class Week extends CActiveRecord
 		$status 	= 	Week::model()->updateAll($attributes, $condition, $params);
 
 		return $status;
+	}
+
+	public function getLastWeekIdBySeasonId($seasonId)
+	{
+		$condition 	= 	'season_id=:season_id AND status=:status';
+		$params 	= 	array(':season_id' => $seasonId, ':status' => self::STATUS_COMPLETED);
+		$data 		= 	Week::model()->lastOne()->find($condition, $params);
+
+		return $data->week_id;
 	}
 }

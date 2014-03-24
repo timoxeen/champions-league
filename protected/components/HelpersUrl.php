@@ -9,4 +9,9 @@ class HelpersUrl {
 		return Yii::app()->createUrl('/' . HelpersUrl::URL_SLUG_SEASON . '/' . $seasonId);
 	}
 
+	public static function getSeasonPlayNextWeekUrl($seasonId)
+	{
+		return Yii::app()->createUrl('/' . HelpersUrl::URL_SLUG_SEASON . '/' . $seasonId . '/play-next-week');
+	}
+
 }

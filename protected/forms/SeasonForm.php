@@ -3,8 +3,10 @@ class SeasonForm extends CFormModel
 {
 	public $seasonId;
 
-	public $title;
+	public $seasonTitle;
+    public $seasonStatus;
 	public $weeks;
+    public $championTeam = NULL;
 
 	public function rules()
     {
@@ -29,8 +31,14 @@ class SeasonForm extends CFormModel
     {
     	$seasonData 	=	Season::model()->getBySeasonId($this->seasonId);
 
-    	$this->title 	=	$seasonData->title;
-    	$this->weeks	=	$seasonData->weeks;	
+    	$this->seasonTitle     =	$seasonData->title;
+        $this->seasonStatus    =    $seasonData->status;
+    	$this->weeks	       =	$seasonData->weeks;	
+
+        if(Season::STATUS_COMPLETED === $seasonData->status)
+        {
+            $this->championTeam     =   LeagueTable::model()->getSeasonChampion($this->seasonId);
+        }
     }
 
 }
