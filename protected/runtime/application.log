@@ -246,3 +246,1253 @@ Stack trace:
 #5 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
 #6 /var/www/champions-league/index.php(11): CWebApplication->run()
 REQUEST_URI=/league/play-all-season
+2014/03/24 14:32:49 [error] [php] Undefined variable: data (/var/www/champions-league/protected/controllers/LeagueController.php:18)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#1 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#2 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/
+2014/03/24 14:34:50 [error] [php] Undefined variable: data (/var/www/champions-league/protected/controllers/LeagueController.php:18)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#1 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#2 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/
+2014/03/24 14:34:58 [error] [php] Undefined variable: data (/var/www/champions-league/protected/controllers/LeagueController.php:18)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#1 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#2 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/
+2014/03/24 15:15:53 [error] [php] Undefined variable: goal (/var/www/champions-league/protected/components/Helpers.php:91)
+Stack trace:
+#0 /var/www/champions-league/framework/web/actions/CInlineAction.php(49): LeagueController->actionPlayAllSeason()
+#1 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#3 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#5 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 15:19:21 [error] [php] Undefined variable: e (/var/www/champions-league/protected/controllers/LeagueController.php:59)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#1 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#2 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 15:19:39 [error] [core.models.store.Order] LeagueController -> actionPlayAllSeason: Property "Fixture.completed" is not defined.
+2014/03/24 16:13:19 [error] [php] Trying to get property of non-object (/var/www/champions-league/protected/models/LeagueTable.php:136)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#2 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 16:19:37 [error] [php] Undefined variable: weekId (/var/www/champions-league/protected/models/LeagueTable.php:178)
+Stack trace:
+#0 /var/www/champions-league/framework/web/actions/CInlineAction.php(49): LeagueController->actionPlayAllSeason()
+#1 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#3 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#5 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 16:20:15 [error] [php] Trying to get property of non-object (/var/www/champions-league/protected/models/LeagueTable.php:136)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#2 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 16:21:42 [error] [php] Trying to get property of non-object (/var/www/champions-league/protected/models/LeagueTable.php:136)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#2 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 16:22:27 [error] [php] Trying to get property of non-object (/var/www/champions-league/protected/models/LeagueTable.php:136)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#2 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 16:22:35 [error] [php] Undefined variable: awayTeamLastWeekData (/var/www/champions-league/protected/models/LeagueTable.php:132)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#2 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 16:22:54 [error] [php] Trying to get property of non-object (/var/www/champions-league/protected/models/LeagueTable.php:136)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#2 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 16:24:55 [error] [php] Creating default object from empty value (/var/www/champions-league/protected/models/LeagueTable.php:168)
+Stack trace:
+#0 /var/www/champions-league/framework/web/actions/CInlineAction.php(49): LeagueController->actionPlayAllSeason()
+#1 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#3 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#5 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 16:43:33 [error] [php] Trying to get property of non-object (/var/www/champions-league/protected/models/LeagueTable.php:145)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#2 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 16:44:08 [error] [php] Trying to get property of non-object (/var/www/champions-league/protected/models/LeagueTable.php:145)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#2 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 16:44:20 [error] [php] Trying to get property of non-object (/var/www/champions-league/protected/models/LeagueTable.php:145)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#2 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 16:44:42 [error] [php] Trying to get property of non-object (/var/www/champions-league/protected/models/LeagueTable.php:145)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#2 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 16:45:11 [error] [php] Trying to get property of non-object (/var/www/champions-league/protected/models/LeagueTable.php:145)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#2 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 16:51:42 [trace] [system.CModule] Loading "log" application component
+2014/03/24 16:51:42 [trace] [system.CModule] Loading "request" application component
+2014/03/24 16:51:42 [trace] [system.CModule] Loading "urlManager" application component
+2014/03/24 16:51:42 [trace] [system.CModule] Loading "db" application component
+2014/03/24 16:51:42 [trace] [system.db.CDbConnection] Opening DB connection
+2014/03/24 16:51:42 [trace] [system.db.CDbConnection] Starting transaction
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Season.exists()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `season`
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `season`
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Querying SQL: SELECT 1 FROM `season` `t` LIMIT 1
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Season.insert()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `season` (`status`, `title`) VALUES (:yp0, :yp1)
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Team.count()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `team`
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `team`
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `team` `t`
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `week`
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `week`
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Team.findAll()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `team` `t`
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `fixture`
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `fixture`
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=193
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=194
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=195
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=196
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=197
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=198
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=199
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=200
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=201
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=202
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=203
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=204
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] Week.updateAll()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `week` SET `status`=:yp0 WHERE season_id=:season_id AND status=:status
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `league_table`
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `league_table`
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 16:51:42 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 16:51:42 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 2 AND week_id = 96 LIMIT 1
+2014/03/24 16:54:21 [trace] [system.CModule] Loading "log" application component
+2014/03/24 16:54:21 [trace] [system.CModule] Loading "request" application component
+2014/03/24 16:54:21 [trace] [system.CModule] Loading "urlManager" application component
+2014/03/24 16:54:21 [trace] [system.CModule] Loading "db" application component
+2014/03/24 16:54:21 [trace] [system.db.CDbConnection] Opening DB connection
+2014/03/24 16:54:21 [trace] [system.db.CDbConnection] Starting transaction
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Season.exists()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `season`
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `season`
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Querying SQL: SELECT 1 FROM `season` `t` LIMIT 1
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Season.insert()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `season` (`status`, `title`) VALUES (:yp0, :yp1)
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Team.count()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `team`
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `team`
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `team` `t`
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `week`
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `week`
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Team.findAll()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `team` `t`
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `fixture`
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `fixture`
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=205
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=206
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=207
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=208
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=209
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=210
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=211
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=212
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=213
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=214
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=215
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=216
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] Week.updateAll()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `week` SET `status`=:yp0 WHERE season_id=:season_id AND status=:status
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `league_table`
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `league_table`
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 16:54:21 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 16:54:21 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 2 ORDER BY league_table_id DESC LIMIT 1
+2014/03/24 16:54:22 [trace] [system.CModule] Loading "log" application component
+2014/03/24 16:54:22 [trace] [system.CModule] Loading "request" application component
+2014/03/24 16:54:22 [trace] [system.CModule] Loading "urlManager" application component
+2014/03/24 16:54:22 [trace] [system.CModule] Loading "db" application component
+2014/03/24 16:54:22 [trace] [system.db.CDbConnection] Opening DB connection
+2014/03/24 16:54:22 [trace] [system.db.CDbConnection] Starting transaction
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Season.exists()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `season`
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `season`
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Querying SQL: SELECT 1 FROM `season` `t` LIMIT 1
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Season.insert()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `season` (`status`, `title`) VALUES (:yp0, :yp1)
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Team.count()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `team`
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `team`
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `team` `t`
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `week`
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `week`
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Team.findAll()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `team` `t`
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `fixture`
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `fixture`
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=217
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=218
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=219
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=220
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=221
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=222
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=223
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=224
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=225
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=226
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=227
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=228
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] Week.updateAll()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `week` SET `status`=:yp0 WHERE season_id=:season_id AND status=:status
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `league_table`
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `league_table`
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 16:54:22 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 16:54:22 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 2 ORDER BY league_table_id DESC LIMIT 1
+2014/03/24 16:54:30 [trace] [system.CModule] Loading "log" application component
+2014/03/24 16:54:30 [trace] [system.CModule] Loading "request" application component
+2014/03/24 16:54:30 [trace] [system.CModule] Loading "urlManager" application component
+2014/03/24 16:54:30 [trace] [system.CModule] Loading "db" application component
+2014/03/24 16:54:30 [trace] [system.db.CDbConnection] Opening DB connection
+2014/03/24 16:54:30 [trace] [system.db.CDbConnection] Starting transaction
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Season.exists()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `season`
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `season`
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT 1 FROM `season` `t` LIMIT 1
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Season.insert()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `season` (`status`, `title`) VALUES (:yp0, :yp1)
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Team.count()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `team`
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `team`
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `team` `t`
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `week`
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `week`
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Team.findAll()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `team` `t`
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `fixture`
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `fixture`
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=229
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=230
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=231
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=232
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=233
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=234
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=235
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=236
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=237
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=238
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=239
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=240
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] Week.updateAll()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `week` SET `status`=:yp0 WHERE season_id=:season_id AND status=:status
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `league_table`
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `league_table`
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 2 ORDER BY league_table_id DESC LIMIT 1
+2014/03/24 16:54:30 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 16:54:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 4 ORDER BY league_table_id DESC LIMIT 1
+2014/03/24 16:54:30 [error] [php] Trying to get property of non-object (/var/www/champions-league/protected/models/LeagueTable.php:145)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#2 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 16:54:30 [trace] [system.CModule] Loading "errorHandler" application component
+2014/03/24 16:58:49 [trace] [system.CModule] Loading "log" application component
+2014/03/24 16:58:49 [trace] [system.CModule] Loading "request" application component
+2014/03/24 16:58:49 [trace] [system.CModule] Loading "urlManager" application component
+2014/03/24 16:58:49 [trace] [system.CModule] Loading "db" application component
+2014/03/24 16:58:49 [trace] [system.db.CDbConnection] Opening DB connection
+2014/03/24 16:58:49 [trace] [system.db.CDbConnection] Starting transaction
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Season.exists()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `season`
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `season`
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Querying SQL: SELECT 1 FROM `season` `t` LIMIT 1
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Season.insert()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `season` (`status`, `title`) VALUES (:yp0, :yp1)
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Team.count()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `team`
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `team`
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `team` `t`
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `week`
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `week`
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Team.findAll()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `team` `t`
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `fixture`
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `fixture`
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=241
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=242
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=243
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=244
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=245
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=246
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=247
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=248
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=249
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=250
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=251
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=252
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] Week.updateAll()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `week` SET `status`=:yp0 WHERE season_id=:season_id AND status=:status
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `league_table`
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `league_table`
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 2 ORDER BY league_table_id DESC LIMIT 1
+2014/03/24 16:58:49 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 16:58:49 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 4 ORDER BY league_table_id DESC LIMIT 1
+2014/03/24 16:58:49 [error] [php] Trying to get property of non-object (/var/www/champions-league/protected/models/LeagueTable.php:145)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#2 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 16:58:49 [trace] [system.CModule] Loading "errorHandler" application component
+2014/03/24 16:59:11 [trace] [system.CModule] Loading "log" application component
+2014/03/24 16:59:11 [trace] [system.CModule] Loading "request" application component
+2014/03/24 16:59:11 [trace] [system.CModule] Loading "urlManager" application component
+2014/03/24 16:59:11 [trace] [system.CModule] Loading "db" application component
+2014/03/24 16:59:11 [trace] [system.db.CDbConnection] Opening DB connection
+2014/03/24 16:59:11 [trace] [system.db.CDbConnection] Starting transaction
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Season.exists()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `season`
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `season`
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Querying SQL: SELECT 1 FROM `season` `t` LIMIT 1
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Season.insert()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `season` (`status`, `title`) VALUES (:yp0, :yp1)
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Team.count()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `team`
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `team`
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `team` `t`
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `week`
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `week`
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Team.findAll()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `team` `t`
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `fixture`
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `fixture`
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=253
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=254
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=255
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=256
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=257
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=258
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=259
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=260
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=261
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=262
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=263
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=264
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] Week.updateAll()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `week` SET `status`=:yp0 WHERE season_id=:season_id AND status=:status
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `league_table`
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `league_table`
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 2 ORDER BY league_table_id DESC LIMIT 1 OFFSET 1
+2014/03/24 16:59:11 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 16:59:11 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 4 ORDER BY league_table_id DESC LIMIT 1 OFFSET 1
+2014/03/24 16:59:11 [error] [php] Trying to get property of non-object (/var/www/champions-league/protected/models/LeagueTable.php:145)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#2 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 16:59:11 [trace] [system.CModule] Loading "errorHandler" application component
+2014/03/24 17:04:07 [trace] [system.CModule] Loading "log" application component
+2014/03/24 17:04:07 [trace] [system.CModule] Loading "request" application component
+2014/03/24 17:04:07 [trace] [system.CModule] Loading "urlManager" application component
+2014/03/24 17:04:07 [trace] [system.CModule] Loading "db" application component
+2014/03/24 17:04:07 [trace] [system.db.CDbConnection] Opening DB connection
+2014/03/24 17:04:07 [trace] [system.db.CDbConnection] Starting transaction
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Season.exists()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `season`
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `season`
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Querying SQL: SELECT 1 FROM `season` `t` LIMIT 1
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Season.insert()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `season` (`status`, `title`) VALUES (:yp0, :yp1)
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Team.count()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `team`
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `team`
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `team` `t`
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `week`
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `week`
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Team.findAll()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `team` `t`
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `fixture`
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `fixture`
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=265
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=266
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=267
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=268
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=269
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=270
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=271
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=272
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=273
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=274
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=275
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=276
+2014/03/24 17:04:07 [trace] [system.db.ar.CActiveRecord] Week.updateAll()
+2014/03/24 17:04:07 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `week` SET `status`=:yp0 WHERE season_id=:season_id AND status=:status
+2014/03/24 17:04:07 [error] [php] Undefined variable: tempWeekId (/var/www/champions-league/protected/models/LeagueTable.php:131)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#2 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 17:04:07 [trace] [system.CModule] Loading "errorHandler" application component
+2014/03/24 17:08:37 [trace] [system.CModule] Loading "log" application component
+2014/03/24 17:08:37 [trace] [system.CModule] Loading "request" application component
+2014/03/24 17:08:37 [trace] [system.CModule] Loading "urlManager" application component
+2014/03/24 17:08:37 [trace] [system.CModule] Loading "db" application component
+2014/03/24 17:08:37 [trace] [system.db.CDbConnection] Opening DB connection
+2014/03/24 17:08:37 [trace] [system.db.CDbConnection] Starting transaction
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Season.exists()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `season`
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `season`
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Querying SQL: SELECT 1 FROM `season` `t` LIMIT 1
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Season.insert()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `season` (`status`, `title`) VALUES (:yp0, :yp1)
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Team.count()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `team`
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `team`
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `team` `t`
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `week`
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `week`
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Team.findAll()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `team` `t`
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `fixture`
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `fixture`
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=277
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=278
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=279
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=280
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=281
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=282
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=283
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=284
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=285
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=286
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=287
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=288
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] Week.updateAll()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `week` SET `status`=:yp0 WHERE season_id=:season_id AND status=:status
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `league_table`
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `league_table`
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 17:08:37 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 17:08:37 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 17:08:37 [error] [php] Undefined variable: weekIndex (/var/www/champions-league/protected/models/LeagueTable.php:187)
+Stack trace:
+#0 /var/www/champions-league/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/champions-league/framework/web/CController.php(286): LeagueController->runAction()
+#2 /var/www/champions-league/framework/web/CController.php(265): LeagueController->runActionWithFilters()
+#3 /var/www/champions-league/framework/web/CWebApplication.php(282): LeagueController->run()
+#4 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/champions-league/index.php(11): CWebApplication->run()
+REQUEST_URI=/league/play-all-season
+2014/03/24 17:08:37 [trace] [system.CModule] Loading "errorHandler" application component
+2014/03/24 17:09:15 [trace] [system.CModule] Loading "log" application component
+2014/03/24 17:09:15 [trace] [system.CModule] Loading "request" application component
+2014/03/24 17:09:15 [trace] [system.CModule] Loading "urlManager" application component
+2014/03/24 17:09:15 [trace] [system.CModule] Loading "db" application component
+2014/03/24 17:09:15 [trace] [system.db.CDbConnection] Opening DB connection
+2014/03/24 17:09:15 [trace] [system.db.CDbConnection] Starting transaction
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Season.exists()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `season`
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `season`
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT 1 FROM `season` `t` LIMIT 1
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Season.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `season` (`status`, `title`) VALUES (:yp0, :yp1)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Team.count()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `team`
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `team`
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `team` `t`
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `week`
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `week`
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Week.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `week` (`status`, `season_id`, `title`) VALUES (:yp0, :yp1, :yp2)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Team.findAll()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `team` `t`
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `fixture`
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `fixture`
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `fixture` (`home_team_goal`, `away_team_goal`, `home_team_power`, `away_team_power`, `status`, `week_id`, `home_team_id`, `away_team_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=289
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=290
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=291
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=292
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=293
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=294
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=295
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=296
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=297
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=298
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=299
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.update()
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Fixture.updateByPk()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `fixture` SET `home_team_goal`=:yp0, `away_team_goal`=:yp1, `home_team_power`=:yp2, `away_team_power`=:yp3, `status`=:yp4, `week_id`=:yp5, `home_team_id`=:yp6, `away_team_id`=:yp7, `fixture_id`=:yp8 WHERE `fixture`.`fixture_id`=300
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] Week.updateAll()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: UPDATE `week` SET `status`=:yp0 WHERE season_id=:season_id AND status=:status
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `league_table`
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `league_table`
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 1 ORDER BY league_table_id DESC LIMIT 1
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 2 ORDER BY league_table_id DESC LIMIT 1
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 4 ORDER BY league_table_id DESC LIMIT 1
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 3 ORDER BY league_table_id DESC LIMIT 1
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 1 ORDER BY league_table_id DESC LIMIT 1
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 4 ORDER BY league_table_id DESC LIMIT 1
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 3 ORDER BY league_table_id DESC LIMIT 1
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 2 ORDER BY league_table_id DESC LIMIT 1
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 3 ORDER BY league_table_id DESC LIMIT 1
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 1 ORDER BY league_table_id DESC LIMIT 1
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 4 ORDER BY league_table_id DESC LIMIT 1
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 2 ORDER BY league_table_id DESC LIMIT 1
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 2 ORDER BY league_table_id DESC LIMIT 1
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 1 ORDER BY league_table_id DESC LIMIT 1
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 3 ORDER BY league_table_id DESC LIMIT 1
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 4 ORDER BY league_table_id DESC LIMIT 1
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 4 ORDER BY league_table_id DESC LIMIT 1
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 1 ORDER BY league_table_id DESC LIMIT 1
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 2 ORDER BY league_table_id DESC LIMIT 1
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.find()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `league_table` `t` WHERE team_id = 3 ORDER BY league_table_id DESC LIMIT 1
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 17:09:15 [trace] [system.db.ar.CActiveRecord] LeagueTable.insert()
+2014/03/24 17:09:15 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `league_table` (`total_win`, `total_lost`, `total_deuce`, `goal_forward`, `goal_against`, `goal_difference`, `week_id`, `team_id`, `points`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)
+2014/03/24 17:09:15 [trace] [system.db.CDbTransaction] Committing transaction

@@ -16,6 +16,9 @@
  */
 class Week extends CActiveRecord
 {
+	const STATUS_NOT_COMPLETED 	=	'not-completed';
+	const STATUS_COMPLETED 		=	'completed';
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -125,5 +128,28 @@ class Week extends CActiveRecord
 		}
 
 		return $weekIds;
+	}
+
+	public function isExistsCompletedWeekBySeasonId($seasonId)
+	{
+		$conditions 	=	'season_id=:season_id AND status=:status';
+		$params 		=	array(':season_id' => $seasonId, ':status' => self::STATUS_COMPLETED);
+
+		$isExists  		=	Week::model()->exists($conditions, $params);
+
+		return $isExists;
+	}
+
+	public function completeSeasonWeeks($seasonId)
+	{
+		$attributes = 	array('status' => self::STATUS_COMPLETED);
+
+		$condition 	= 	'season_id=:season_id AND status=:status';
+
+		$params 	= 	array(':season_id' => $seasonId, ':status' => self::STATUS_NOT_COMPLETED);
+
+		$status 	= 	Week::model()->updateAll($attributes, $condition, $params);
+
+		return $status;
 	}
 }

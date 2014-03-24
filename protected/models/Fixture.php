@@ -19,6 +19,9 @@
  */
 class Fixture extends CActiveRecord
 {
+	const STATUS_NOT_COMPLETED 	=	'not-completed';
+	const STATUS_COMPLETED 		=	'completed';
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -118,25 +121,23 @@ class Fixture extends CActiveRecord
 
 	public function createSeasonAllFixtureWithWeekIds($weekIds)
 	{
-Helpers::printPre($weekIds);
-		$teamIds 	=	Team::model()->getIds();
+		$teamIds 		=	Team::model()->getIds();
 		$seasonFixture 	=	Helpers::scheduler($teamIds);
-Helpers::printPre($seasonFixture);
-
-		$weekIndex = 0;
+		$weekIndex 		= 	0;
+		$results 		=	array();
 
 		// first half
 		foreach($seasonFixture as $rowWeek)
 		{
 			foreach($rowWeek as $matchesIndex => $matchesRow)
 			{
-				$fixture 					=	new Fixture;
-				$fixture->week_id 			=	$weekIds[$weekIndex];
-				$fixture->home_team_id		=	$rowWeek[$matchesIndex]['home'];
-				$fixture->away_team_id		=	$rowWeek[$matchesIndex]['away'];
-				$fixture->home_team_power	=	Helpers::getTeamPower();
-				$fixture->away_team_power	=	Helpers::getTeamPower();
-				$fixture->save();
+				$fixture 	=	$this->_addFixture(
+										$weekIds[$weekIndex], 
+										$rowWeek[$matchesIndex]['home'],
+										$rowWeek[$matchesIndex]['away']
+									);
+
+				$results[]	=	$fixture;
 			}
 
 			$weekIndex++;
@@ -147,16 +148,50 @@ Helpers::printPre($seasonFixture);
 		{
 			foreach($rowWeek as $matchesIndex => $matchesRow)
 			{
-				$fixture 					=	new Fixture;
-				$fixture->week_id 			=	$weekIds[$weekIndex];
-				$fixture->home_team_id		=	$rowWeek[$matchesIndex]['away'];
-				$fixture->away_team_id		=	$rowWeek[$matchesIndex]['home'];
-				$fixture->home_team_power	=	Helpers::getTeamPower();
-				$fixture->away_team_power	=	Helpers::getTeamPower();
-				$fixture->save();
+				$fixture 	=	$this->_addFixture(
+										$weekIds[$weekIndex], 
+										$rowWeek[$matchesIndex]['away'],
+										$rowWeek[$matchesIndex]['home']
+									);
+
+				$results[]	=	$fixture;
 			}
 
 			$weekIndex++;
 		}
+
+		return $results;
+	}
+
+	private function _addFixture($weekId, $homeTeamId, $awayTeamId)
+	{
+		$fixture 					=	new Fixture;
+		$fixture->week_id 			=	$weekId;
+		$fixture->home_team_id		=	$homeTeamId;
+		$fixture->away_team_id		=	$awayTeamId;
+		$fixture->home_team_power	=	Helpers::getTeamPower();
+		$fixture->away_team_power	=	Helpers::getTeamPower();
+		$fixture->save();
+
+		return $fixture;
+	}
+
+	public function playFixtureByFixtures($fixtures)
+	{
+		$results 	=	array();
+
+		foreach($fixtures as $rowFixture)
+		{
+			$resultsMatch 	=	Helpers::playGame($rowFixture->home_team_power, $rowFixture->away_team_power);
+
+			$rowFixture->home_team_goal 	=	$resultsMatch['home'];
+			$rowFixture->away_team_goal 	=	$resultsMatch['away'];
+			$rowFixture->status 			=	self::STATUS_COMPLETED;
+			$rowFixture->save();
+
+			$results[]	=	$rowFixture;
+		}
+
+		return $results;
 	}
 }

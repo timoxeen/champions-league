@@ -112,7 +112,7 @@ class Season extends CActiveRecord
 	public function createNewSeason()
 	{
 		$season 			=	new Season;
-		$season->title 		=	'1. Season';
+		$season->title 		=	'Season: 1';
 		$season->save();
 
 		return $season->season_id;

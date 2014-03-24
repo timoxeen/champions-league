@@ -8,7 +8,7 @@ class LeagueController extends CController
 	public function actionIndex()
 	{
 		$isSeasonExists	=	Season::model()->isExists();
-
+$isSeasonExists = false;
 		if(FALSE === $isSeasonExists)
 		{
 			$this->render('no-season');
@@ -32,7 +32,7 @@ class LeagueController extends CController
 		try {
 
 			$isSeasonExists	=	Season::model()->isExists();
-
+$isSeasonExists = FALSE;
 			if(FALSE === $isSeasonExists)
 			{
 				// create new season
@@ -42,7 +42,16 @@ class LeagueController extends CController
 				$weekIds 	= 	Week::model()->createSeasonAllWeekBySeasonId($seasonId);
 				
 				// create fixtures for season 
-				Fixture::model()->createSeasonAllFixtureWithWeekIds($weekIds);
+				$fixtures 	=	Fixture::model()->createSeasonAllFixtureWithWeekIds($weekIds);
+
+				// play all games for season
+				$fixtures 	=	Fixture::model()->playFixtureByFixtures($fixtures);
+
+				// play weeks for season
+				Week::model()->completeSeasonWeeks($seasonId);
+
+				// set league_table
+				LeagueTable::model()->createSeasonLeagueTableByFixtures($fixtures, $seasonId);
 
 				$transaction->commit();
 			}
@@ -51,7 +60,7 @@ class LeagueController extends CController
 
 			}
 
-		} catch (Exception $ex) {
+		} catch (Exception $e) {
             $transaction->rollback();
             Yii::log('LeagueController -> actionPlayAllSeason: '.$e->getMessage(), \CLogger::LEVEL_ERROR, 'core.models.store.Order');
             die('Error: ' . $e->getMessage());

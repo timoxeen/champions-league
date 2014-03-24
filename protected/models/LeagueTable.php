@@ -118,4 +118,96 @@ class LeagueTable extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+	public function createSeasonLeagueTableByFixtures($fixtures)
+	{
+		$isFirstWeek = TRUE;
+
+		foreach($fixtures as $row)
+		{
+			$weekId 	=	$row->week_id;
+
+			if(TRUE === $isFirstWeek)
+			{
+				if(! isset($tempWeekId))
+				{
+					$tempWeekId  =	$weekId;
+				}
+				else
+				{
+					if($tempWeekId !== $weekId)
+					{
+						$isFirstWeek 	=	FALSE;
+						$tempWeekId  	=	$weekId;
+					}
+				}
+			}
+			
+			if(TRUE === $isFirstWeek)
+			{
+				$homeTeamLastWeekData 	=	$this->_getDefaultData();
+				$awayTeamLastWeekData 	=	$this->_getDefaultData();
+			}
+			else 
+			{
+				$homeTeamLastWeekData 	=	$this->_getLastDataByTeamId($row->home_team_id, $row->week_id);
+				$awayTeamLastWeekData 	=	$this->_getLastDataByTeamId($row->away_team_id, $row->week_id);
+			}
+
+			$matchDetail 	=	Helpers::getMatchDetail($row->home_team_goal, $row->away_team_goal);
+
+			// add for home team
+			$leagueTableHome 					=	new LeagueTable;
+			$leagueTableHome->week_id 			=	$weekId;
+			$leagueTableHome->team_id 			=	$row->home_team_id;
+			$leagueTableHome->points			=	$homeTeamLastWeekData->points + $matchDetail['home_points'];
+			$leagueTableHome->total_win 		=	$homeTeamLastWeekData->total_win + $matchDetail['home_win'];
+			$leagueTableHome->total_lost 		=	$homeTeamLastWeekData->total_lost + $matchDetail['home_lost'];
+			$leagueTableHome->total_deuce 		=	$homeTeamLastWeekData->total_deuce + $matchDetail['home_deuce'];
+			$leagueTableHome->goal_forward 		=	$homeTeamLastWeekData->goal_forward + $row->home_team_goal;
+			$leagueTableHome->goal_against 		=	$homeTeamLastWeekData->goal_against + $row->away_team_goal;	
+			$leagueTableHome->goal_difference	=	$leagueTableHome->goal_forward - $leagueTableHome->goal_against;
+			$leagueTableHome->save();
+
+			// add for away team
+			$leagueTableAway 					=	new LeagueTable;
+			$leagueTableAway->week_id 			=	$weekId;
+			$leagueTableAway->team_id 			=	$row->away_team_id;
+			$leagueTableAway->points			=	$awayTeamLastWeekData->points + $matchDetail['away_points'];
+			$leagueTableAway->total_win 		=	$awayTeamLastWeekData->total_win + $matchDetail['away_win'];
+			$leagueTableAway->total_lost 		=	$awayTeamLastWeekData->total_lost + $matchDetail['away_lost'];
+			$leagueTableAway->total_deuce 		=	$awayTeamLastWeekData->total_deuce + $matchDetail['away_deuce'];
+			$leagueTableAway->goal_forward 		=	$awayTeamLastWeekData->goal_forward + $row->away_team_goal;
+			$leagueTableAway->goal_against 		=	$awayTeamLastWeekData->goal_against + $row->home_team_goal;	
+			$leagueTableAway->goal_difference	=	$leagueTableAway->goal_forward - $leagueTableHome->goal_against;
+			$leagueTableAway->save();
+		}
+	}
+
+	private function _getDefaultData()
+	{
+		$data 	=	new LeagueTable;
+
+		$data->points 			=	0;
+		$data->total_win 		=	0;
+		$data->total_lost 		=	0;
+		$data->total_deuce 		=	0;
+		$data->goal_forward 	=	0;
+		$data->goal_against 	=	0;
+		$data->goal_difference 	=	0;
+
+		return $data;
+	}
+
+	private function _getLastDataByTeamId($teamId, $weekId)
+	{
+		$criteria = new CDbCriteria();
+		$criteria->condition 	= 	'team_id = ' . $teamId;
+		$criteria->limit 		= 	1;
+		$criteria->offset 		= 	0;
+		$criteria->order 		= 	'league_table_id DESC';
+		$data 	= 	LeagueTable::model()->find($criteria);			
+
+		return $data;
+	}
 }
