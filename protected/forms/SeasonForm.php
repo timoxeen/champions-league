@@ -7,6 +7,9 @@ class SeasonForm extends CFormModel
     public $seasonStatus;
 	public $weeks;
     public $championTeam = NULL;
+    public $seasonNotCompletedWeekId;
+
+    private $fixture;
 
 	public function rules()
     {
@@ -39,6 +42,34 @@ class SeasonForm extends CFormModel
         {
             $this->championTeam     =   LeagueTable::model()->getSeasonChampion($this->seasonId);
         }
+        else 
+        {
+            $this->seasonNotCompletedWeekId     =   Week::model()->getLastNotCompletedWeekIdBySeasonId($this->seasonId);
+        }
     }
 
+    public function setSeasonNotCompletedWeekId()
+    {
+        $this->seasonNotCompletedWeekId     =   Week::model()->getLastNotCompletedWeekIdBySeasonId($this->seasonId);
+    }
+
+    public function setFixtureByWeekId()
+    {
+        $this->fixture      =   Fixture::model()->getByWeekId($this->seasonNotCompletedWeekId);
+    }
+
+    public function playFixtureByFixture()
+    {
+        $this->fixture      =   Fixture::model()->playFixtureByFixtures($this->fixture);
+    }
+
+    public function completeWeekByWeekId()
+    {
+        Week::model()->completeWeekByWeekId($this->seasonNotCompletedWeekId);
+    }
+
+    public function createSeasonLeagueTableByFixture()
+    {
+        LeagueTable::model()->createSeasonLeagueTableByFixtures($this->fixture);
+    }
 }

@@ -63,6 +63,7 @@ return array(
 				'league/start-season' => 'league/startSeason',
 				'league/play-all-season' => 'league/playAllSeason',
 				'season/<seasonId>' => 'season/detail/<id>',
+				'season/<seasonId>/next-week' => 'season/playNextWeek/<id>',
 				''
 				/*'gii'=>'gii',
 	            'gii/<controller:\w+>'=>'gii/<controller>',

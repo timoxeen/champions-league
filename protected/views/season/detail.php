@@ -54,9 +54,7 @@
           <thead>
             <tr>
               <th colspan="5">
-                <?php 
-                  if(Week::STATUS_NOT_COMPLETED === $week->status) {
-                ?>
+                <?php if(Week::STATUS_NOT_COMPLETED === $week->status) { ?>
                 Fixtures
                 <?php } else { ?>
                 Results
@@ -68,17 +66,28 @@
             <?php foreach($week->fixtures as $weekFixture) { ?>
               <tr>
                <td><?php echo $weekFixture->homeTeam->title; ?></td>
-               <td><?php echo $weekFixture->home_team_goal; ?></td>
+               <td>
+                 <?php if(Week::STATUS_COMPLETED === $week->status) { ?> 
+                  <?php echo $weekFixture->home_team_goal; ?>
+                 <?php } ?>
+               </td>
                <td>-</td>
-               <td><?php echo $weekFixture->away_team_goal; ?></td>
+               <td>
+                 <?php if(Week::STATUS_COMPLETED === $week->status) { ?> 
+                  <?php echo $weekFixture->away_team_goal; ?>
+                 <?php } ?>
+               </td>
                <td><?php echo $weekFixture->awayTeam->title; ?></td>
               </tr>
             <?php } ?>
           </tbody>
         </table>
 
-         <?php if(Season::STATUS_COMPLETED !== $data->seasonStatus) { ?>
-         <p><a class="btn btn-default" href="<?php echo HelpersUrl::getSeasonPlayNextWeekUrl($data->seasonId); ?>" role="button">Play next week &raquo;</a></p>
+         <?php 
+              if(NULL !== $data->seasonNotCompletedWeekId 
+                && $data->seasonNotCompletedWeekId === $week->week_id) { 
+         ?>
+         <p><a class="btn btn-default" href="<?php echo HelpersUrl::getSeasonNextWeekUrl($data->seasonId); ?>" role="button">Next week &raquo;</a></p>
          <?php } ?>
 
         </div>

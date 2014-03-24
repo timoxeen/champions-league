@@ -77,9 +77,14 @@ class Week extends CActiveRecord
 	public function scopes()
     {
         return array(
-            'lastOne'=>array(
+            'lastOneWeekIdDesc'=>array(
             	'select'=>array('week_id'),
                 'order'=>'week_id DESC',
+                'limit'=>1,
+            ),
+            'lastOneWeekIdAsc'=>array(
+            	'select'=>array('week_id'),
+                'order'=>'week_id ASC',
                 'limit'=>1,
             ),
         );
@@ -166,11 +171,33 @@ class Week extends CActiveRecord
 		return $status;
 	}
 
-	public function getLastWeekIdBySeasonId($seasonId)
+	public function completeWeekByWeekId($weekId)
+	{
+		$attributes = 	array('status' => self::STATUS_COMPLETED);
+
+		$condition 	= 	'week_id=:week_id AND status=:status';
+
+		$params 	= 	array(':week_id' => $weekId, ':status' => self::STATUS_NOT_COMPLETED);
+
+		$status 	= 	Week::model()->updateAll($attributes, $condition, $params);
+
+		return $status;
+	}
+
+	public function getLastCompletedWeekIdBySeasonId($seasonId)
 	{
 		$condition 	= 	'season_id=:season_id AND status=:status';
 		$params 	= 	array(':season_id' => $seasonId, ':status' => self::STATUS_COMPLETED);
-		$data 		= 	Week::model()->lastOne()->find($condition, $params);
+		$data 		= 	Week::model()->lastOneWeekIdDesc()->find($condition, $params);
+
+		return $data->week_id;
+	}
+
+	public function getLastNotCompletedWeekIdBySeasonId($seasonId)
+	{
+		$condition 	= 	'season_id=:season_id AND status=:status';
+		$params 	= 	array(':season_id' => $seasonId, ':status' => self::STATUS_NOT_COMPLETED);
+		$data 		= 	Week::model()->lastOneWeekIdAsc()->find($condition, $params);
 
 		return $data->week_id;
 	}

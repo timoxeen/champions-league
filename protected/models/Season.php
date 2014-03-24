@@ -140,8 +140,8 @@ class Season extends CActiveRecord
 
 	public function getActiveSeason()
 	{
-		$conditions 	= 	'season_id=:season_id AND status=:status';
-		$params 		= 	array(':season_id' => $seasonId, ':status' => self::STATUS_ACTIVE);
+		$conditions 	= 	'status=:status';
+		$params 		= 	array(':status' => self::STATUS_ACTIVE);
 
 		$data 	=	Season::model()->find($conditions, $params);
 

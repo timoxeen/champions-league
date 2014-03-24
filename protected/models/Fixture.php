@@ -194,4 +194,13 @@ class Fixture extends CActiveRecord
 
 		return $results;
 	}
+
+	public function getByWeekId($weekId)
+	{
+		$conditions 	=	'week_id=:week_id AND status=:status';
+		$params 		=	array(':week_id'=>$weekId, ':status'=>self::STATUS_NOT_COMPLETED);
+		$data 			=	Fixture::model()->findAll($conditions, $params);
+
+		return $data;		
+	}
 }

@@ -129,7 +129,7 @@ class LeagueTable extends CActiveRecord
 		return parent::model($className);
 	}
 
-	public function createSeasonLeagueTableByFixtures($fixtures)
+	public function createSeasonLeagueTableByFixtures($fixtures, $isFirstWeek = TRUE;)
 	{
 		$isFirstWeek = TRUE;
 
@@ -223,7 +223,7 @@ class LeagueTable extends CActiveRecord
 
 	public function getSeasonChampion($seasonId)
 	{
-		$seasonLastWeekId 	=	Week::model()->getLastWeekIdBySeasonId($seasonId);
+		$seasonLastWeekId 	=	Week::model()->getLastCompletedWeekIdBySeasonId($seasonId);
 
 		$condition 	=	'week_id=:week_id';
 		$param 		=	array(':week_id' => $seasonLastWeekId);

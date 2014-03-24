@@ -15,17 +15,9 @@ class LeagueController extends CController
 			Yii::app()->end();
 		}
 		
-		$activeSeasonData 	=	Season::model()->getActiveSeason();
-
-		if(! isset($activeSeasonData->season_id))
-		{
-			$this->render('no-season');
-			Yii::app()->end();
-		}
+		$this->_controlActiveSeasonAndRedirect();
 		
-		$this->redirect('/season/' . $activeSeasonData->season_id);
-		Yii::app()->end();
-
+		$this->render('no-season');
 	}
 
 	public function actionStartSeason()
@@ -38,27 +30,38 @@ class LeagueController extends CController
 		}
 		else 
 		{
-			$activeSeasonData 	=	Season::model()->getActiveSeason();
+			$this->_controlActiveSeasonAndRedirect();
 
-			if(! isset($activeSeasonData->season_id))
-			{
-				die("sdfsd");
-			}
+			// create new season
+			$transaction = Yii::app()->db->beginTransaction();
 
+			try {
+
+				$lastSeasonId 	=	$this->_controlAndGetLastSeasonId();
+
+				// create new season
+				$seasonId 	=	Season::model()->createNewSeason($lastSeasonId);				
+
+				// create all weeks for season
+				$weekIds 	= 	Week::model()->createSeasonAllWeekBySeasonId($seasonId);
+				
+				// create fixtures for season 
+				$fixtures 	=	Fixture::model()->createSeasonAllFixtureWithWeekIds($weekIds);
+
+				$transaction->commit();
+
+				$this->redirect('/season/' . $seasonId);
+
+			} catch (Exception $e) {
+	            $transaction->rollback();
+	            Yii::log('LeagueController -> actionPlayAllSeason: '.$e->getMessage(), \CLogger::LEVEL_ERROR, 'core.models.store.Order');
+	            die('Error: ' . $e->getMessage());
+	        }
 		}
 	}
 
-	public function actionPlayAllSeason()
+	private function _controlAndGetLastSeasonId()
 	{
-
-		$activeSeasonData 	=	Season::model()->getActiveSeason();
-
-		if(isset($activeSeasonData->season_id))
-		{
-			$this->redirect('/season/' . $activeSeasonData->season_id);
-			Yii::app()->end();
-		}	
-
 		$lastSeasonData 	=	Season::model()->getLastCompletedSeason();
 
 		if(isset($lastSeasonData->season_id))
@@ -66,10 +69,31 @@ class LeagueController extends CController
 		else 
 			$lastSeasonId = 0;
 
+		return $lastSeasonId;
+	}
+
+	private function _controlActiveSeasonAndRedirect()
+	{
+		$activeSeasonData 	=	Season::model()->getActiveSeason();
+
+		if(isset($activeSeasonData->season_id))
+		{
+			$this->redirect('/season/' . $activeSeasonData->season_id);
+			Yii::app()->end();
+		}
+	}
+
+	public function actionPlayAllSeason()
+	{
+
+		$this->_controlActiveSeasonAndRedirect();
+
 		// create new season
 		$transaction = Yii::app()->db->beginTransaction();
 
 		try {
+
+			$lastSeasonId 	=	$this->_controlAndGetLastSeasonId();
 
 			// create new season
 			$seasonId 	=	Season::model()->createNewSeason($lastSeasonId);				
@@ -87,7 +111,7 @@ class LeagueController extends CController
 			Week::model()->completeSeasonWeeks($seasonId);
 
 			// set league_table
-			LeagueTable::model()->createSeasonLeagueTableByFixtures($fixtures, $seasonId);
+			LeagueTable::model()->createSeasonLeagueTableByFixtures($fixtures);
 
 			// complete season 
 			Season::model()->completeSeason($seasonId);
@@ -96,11 +120,11 @@ class LeagueController extends CController
 
 			$this->redirect('/season/' . $seasonId);
 
-			} catch (Exception $e) {
-	            $transaction->rollback();
-	            Yii::log('LeagueController -> actionPlayAllSeason: '.$e->getMessage(), \CLogger::LEVEL_ERROR, 'core.models.store.Order');
-	            die('Error: ' . $e->getMessage());
-	        }
+		} catch (Exception $e) {
+            $transaction->rollback();
+            Yii::log('LeagueController -> actionPlayAllSeason: '.$e->getMessage(), \CLogger::LEVEL_ERROR, 'core.models.store.Order');
+            die('Error: ' . $e->getMessage());
+        }
 	
 
 	}

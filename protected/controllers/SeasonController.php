@@ -15,6 +15,7 @@ class SeasonController extends CController
 
 		if(! $seasonForm->validate())
 		{
+			$this->layout = '//layouts/layout-without-nav';
 			$this->render('error');
 			Yii::app()->end();
 		}
@@ -23,6 +24,39 @@ class SeasonController extends CController
 
 		$this->render('detail', array('data'=>$seasonForm));
 
+	}
+
+	public function actionPlayNextWeek($seasonId)
+	{
+		$seasonForm 	=	new SeasonForm('detail');
+		$seasonForm->attributes 	=	$_GET;
+
+		if(! $seasonForm->validate())
+		{
+			$this->layout = '//layouts/layout-without-nav';
+			$this->render('error');
+			Yii::app()->end();
+		}
+
+		$transaction = Yii::app()->db->beginTransaction();
+
+		try {
+
+			$seasonForm->setSeasonNotCompletedWeekId();
+			$seasonForm->setFixtureByWeekId();
+			$seasonForm->playFixtureByFixture();
+			$seasonForm->completeWeekByWeekId();
+			$seasonForm->createSeasonLeagueTableByFixture();
+
+			$transaction->commit();
+
+			$this->redirect('/season/' . $seasonId);
+
+		} catch (Exception $e) {
+            $transaction->rollback();
+            Yii::log('SeasonController -> actionPlayNextWeek: '.$e->getMessage(), \CLogger::LEVEL_ERROR, 'core.models.store.Order');
+            die('Error: ' . $e->getMessage());
+        }
 	}
 
 	/**
