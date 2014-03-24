@@ -6,26 +6,15 @@
 class SiteController extends CController
 {	
 
-	public $layout='//layouts/main-layout';
-
-	/**
-	 * Index action is the default action in a controller.
-	 */
-	public function actionIndex()
-	{
-		$this->render('index');
-	}
-
-	public function actionTest()
-	{
-		die("test");
-	}
+	public $layout='//layouts/layout-without-nav';
 
 	/**
 	 * This is the action to handle external exceptions.
 	 */
 	public function actionError()
 	{
+		$this->layout = '//layouts/layout-without-nav';
+
 	    if($error=Yii::app()->errorHandler->error)
 	    {
 	    	if(Yii::app()->request->isAjaxRequest)

@@ -18,7 +18,7 @@ return array(
 		'application.components.*',
 	),
 
-	'defaultController'=>'site',
+	'defaultController'=>'league',
 
 	'modules'=>array(
         'gii'=>array(
@@ -58,7 +58,9 @@ return array(
 			'showScriptName'=>false,
 			'caseSensitive'=>false, 
 			'rules'=>array(
-				''=>'site/index',
+				''=>'league/index',
+				'league/next-week' => 'league/nextWeek',
+				'league/play-all-season' => 'league/playAllSeason',
 				/*'gii'=>'gii',
 	            'gii/<controller:\w+>'=>'gii/<controller>',
 	            'gii/<controller:\w+>/<action:\w+>'=>'gii/<controller>/<action>',*/

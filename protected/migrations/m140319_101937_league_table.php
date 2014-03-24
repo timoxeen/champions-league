@@ -9,9 +9,8 @@ class m140319_101937_league_table extends CDbMigration
 		$this->createTable('league_table',
 			array(
 				  'league_table_id' => "pk",
-				  'season_id' => "int(10) unsigned NOT NULL REFERENCES season(season_id)",
-				  'week_id' => "int(10) unsigned NOT NULL REFERENCES week(week_id)",
-				  'team_id' => "int(10) unsigned NOT NULL REFERENCES team(team_id)",
+				  'week_id' => "int(11) NOT NULL REFERENCES week(week_id)",
+				  'team_id' => "int(11) NOT NULL REFERENCES team(team_id)",
 				  'total_win' => "smallint(5) unsigned NOT NULL DEFAULT '0'",
 				  'total_lost' => "smallint(5) unsigned NOT NULL DEFAULT '0'",
 				  'total_deuce' => "smallint(5) unsigned NOT NULL DEFAULT '0'",
