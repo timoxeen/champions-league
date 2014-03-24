@@ -55,6 +55,8 @@ class Week extends CActiveRecord
 		return array(
 			'fixtures' => array(self::HAS_MANY, 'Fixture', 'week_id'),
 			'leagueTables' => array(self::HAS_MANY, 'LeagueTable', 'week_id'),
+			'leagueTablesOrdered' => array(self::HAS_MANY, 'LeagueTable', 'week_id',
+					'order' => 'points DESC, goal_difference DESC'),
 			'season' => array(self::BELONGS_TO, 'Season', 'season_id'),
 		);
 	}

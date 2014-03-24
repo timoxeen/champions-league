@@ -4,10 +4,10 @@
   </p>
 
   <div class="jumbotron">
-    <h1>Hello, welcome to Champions League!</h1>
-    <p>Do you want to play league 
-    <a href="<?php echo $this->createUrl('/league/next-week'); ?>">one by one</a> 
-    or 
-    <a href="<?php echo $this->createUrl('/league/play-all-season'); ?>">at once</a>?</p>
+    <h1>Şampiyonlar Ligi'ne hoşgeldiniz!</h1>
+    <p>
+      İsteseniz yeni bir lige başlayabilir ve sonuçları hafta hafta <a href="<?php echo $this->createUrl('/league/start-season'); ?>">görebilir</a> 
+      ya da yeni ligin tüm maçlarını tek seferde <a href="<?php echo $this->createUrl('/league/play-all-season'); ?>">görebilirsiniz</a>.
+    </p>
   </div>
 </div><!--/span-->

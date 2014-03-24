@@ -8,33 +8,34 @@ class LeagueController extends CController
 	public function actionIndex()
 	{
 		$isSeasonExists	=	Season::model()->isExists();
-$isSeasonExists = false;
+
 		if(FALSE === $isSeasonExists)
 		{
 			$this->render('no-season');
 		}
 		else 
 		{
-			$this->render('week', array('data'=>$data));
+			$this->render('index', array('data'=>$data));
 		}
 
 	}
 
-	public function actionNextWeek()
+	public function actionStartSeason()
 	{
 
 	}
 
 	public function actionPlayAllSeason()
 	{
-		$transaction = Yii::app()->db->beginTransaction();
 
-		try {
+		$isSeasonExists	=	Season::model()->isExists();
 
-			$isSeasonExists	=	Season::model()->isExists();
-$isSeasonExists = FALSE;
-			if(FALSE === $isSeasonExists)
-			{
+		if(FALSE === $isSeasonExists)
+		{
+			$transaction = Yii::app()->db->beginTransaction();
+
+			try {
+
 				// create new season
 				$seasonId 	=	Season::model()->createNewSeason();				
 
@@ -53,18 +54,23 @@ $isSeasonExists = FALSE;
 				// set league_table
 				LeagueTable::model()->createSeasonLeagueTableByFixtures($fixtures, $seasonId);
 
+				// complete season 
+				Season::model()->completeSeason($seasonId);
+
 				$transaction->commit();
-			}
-			else 
-			{
 
-			}
+				$this->redirect('/season/' . $seasonId);
 
-		} catch (Exception $e) {
-            $transaction->rollback();
-            Yii::log('LeagueController -> actionPlayAllSeason: '.$e->getMessage(), \CLogger::LEVEL_ERROR, 'core.models.store.Order');
-            die('Error: ' . $e->getMessage());
-        }
+				} catch (Exception $e) {
+		            $transaction->rollback();
+		            Yii::log('LeagueController -> actionPlayAllSeason: '.$e->getMessage(), \CLogger::LEVEL_ERROR, 'core.models.store.Order');
+		            die('Error: ' . $e->getMessage());
+		        }
+		}
+		else 
+		{
+			$this->redirect('/');
+		}
 
 	}
 

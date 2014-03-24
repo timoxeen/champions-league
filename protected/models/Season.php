@@ -13,6 +13,9 @@
  */
 class Season extends CActiveRecord
 {
+	const STATUS_ACTIVE 		=	'active';
+	const STATUS_COMPLETED 		=	'completed';
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -33,7 +36,6 @@ class Season extends CActiveRecord
 			array('status', 'length', 'max'=>9),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('season_id, title, status', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -109,6 +111,23 @@ class Season extends CActiveRecord
 		return Season::model()->exists();
 	}
 
+	public function isExistsBySeasonId($seasonId)
+	{
+		$condition 	=	'season_id=:season_id';
+		$param 		=	array(':season_id'=>$seasonId);
+
+		$isExists 	=	Season::model()->exists($condition, $param);
+
+		return $isExists;
+	}
+
+	public function getBySeasonId($seasonId)
+	{
+		$data 	=	Season::model()->findByPk($seasonId);
+
+		return $data;
+	}
+
 	public function createNewSeason()
 	{
 		$season 			=	new Season;
@@ -116,5 +135,16 @@ class Season extends CActiveRecord
 		$season->save();
 
 		return $season->season_id;
+	}
+
+	public function completeSeason($seasonId)
+	{
+		$attributes = 	array('status' => self::STATUS_COMPLETED);
+
+		$condition 	= 	'season_id=:season_id AND status=:status';
+
+		$params 	= 	array(':season_id' => $seasonId, ':status' => self::STATUS_ACTIVE);
+
+		Season::model()->updateAll($attributes, $condition, $params);
 	}
 }

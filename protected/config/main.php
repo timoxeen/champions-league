@@ -16,6 +16,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'application.forms.*',
 	),
 
 	'defaultController'=>'league',
@@ -59,8 +60,10 @@ return array(
 			'caseSensitive'=>false, 
 			'rules'=>array(
 				''=>'league/index',
-				'league/next-week' => 'league/nextWeek',
+				'league/start-season' => 'league/startSeason',
 				'league/play-all-season' => 'league/playAllSeason',
+				'season/<seasonId>' => 'season/detail/<id>',
+				''
 				/*'gii'=>'gii',
 	            'gii/<controller:\w+>'=>'gii/<controller>',
 	            'gii/<controller:\w+>/<action:\w+>'=>'gii/<controller>/<action>',*/
