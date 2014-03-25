@@ -20,7 +20,8 @@ class SeasonController extends CController
 			Yii::app()->end();
 		}
 
-		$seasonForm->setSeasonData();		
+		$seasonForm->setSeasonData();	
+		$seasonForm->setNextWeekButton();	
 
 		$this->render('detail', array('data'=>$seasonForm));
 
@@ -45,12 +46,13 @@ class SeasonController extends CController
 			$seasonForm->setSeasonNotCompletedWeekId();
 			$seasonForm->setFixtureByWeekId();
 			$seasonForm->playFixtureByFixture();
+			$seasonForm->createSeasonLeagueTableByFixturesForOneByOne();
 			$seasonForm->completeWeekByWeekId();
-			$seasonForm->createSeasonLeagueTableByFixture();
+			$seasonForm->controlAndCompleteSeason();
 
 			$transaction->commit();
 
-			$this->redirect('/season/' . $seasonId);
+			$this->redirect('/season/' . $seasonId . '#week' . $seasonForm->seasonNotCompletedWeekId);
 
 		} catch (Exception $e) {
             $transaction->rollback();

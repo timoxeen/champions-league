@@ -8,6 +8,8 @@ class SeasonForm extends CFormModel
 	public $weeks;
     public $championTeam = NULL;
     public $seasonNotCompletedWeekId;
+    public $seasonLastCompletedWeekId;
+    public $isNextWeekButton    =   FALSE;
 
     private $fixture;
 
@@ -44,7 +46,17 @@ class SeasonForm extends CFormModel
         }
         else 
         {
-            $this->seasonNotCompletedWeekId     =   Week::model()->getLastNotCompletedWeekIdBySeasonId($this->seasonId);
+            $this->seasonLastCompletedWeekId     =   Week::model()->getLastCompletedWeekIdBySeasonId($this->seasonId);
+        }
+    }
+
+    public function setNextWeekButton()
+    {
+        $isExistsNotCompletedWeek   =   Week::model()->isExistsNotCompletedWeek($this->seasonId);
+
+        if(TRUE === $isExistsNotCompletedWeek)
+        {
+            $this->isNextWeekButton     =   TRUE;
         }
     }
 
@@ -68,8 +80,18 @@ class SeasonForm extends CFormModel
         Week::model()->completeWeekByWeekId($this->seasonNotCompletedWeekId);
     }
 
-    public function createSeasonLeagueTableByFixture()
+    public function createSeasonLeagueTableByFixturesForOneByOne()
     {
-        LeagueTable::model()->createSeasonLeagueTableByFixtures($this->fixture);
+        LeagueTable::model()->createSeasonLeagueTableByFixturesForOneByOne($this->fixture, $this->seasonId,$this->seasonNotCompletedWeekId);
+    }
+
+    public function controlAndCompleteSeason()
+    {
+        $isExistsNotCompletedWeek   =   Week::model()->isExistsNotCompletedWeek($this->seasonId);
+
+        if(FALSE === $isExistsNotCompletedWeek)
+        {
+            Season::model()->completeSeason($this->seasonId);
+        }
     }
 }
