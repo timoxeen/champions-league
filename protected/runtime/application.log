@@ -3900,3 +3900,174 @@ REQUEST_URI=/league
 2014/03/25 01:04:08 [trace] [system.db.ar.CActiveRecord] Season.findAll()
 2014/03/25 01:04:08 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `season` `t`
 2014/03/25 01:04:08 [trace] [system.CModule] Loading "clientScript" application component
+2014/03/25 21:24:47 [trace] [system.CModule] Loading "log" application component
+2014/03/25 21:24:47 [trace] [system.CModule] Loading "request" application component
+2014/03/25 21:24:47 [trace] [system.CModule] Loading "urlManager" application component
+2014/03/25 21:24:47 [trace] [system.CModule] Loading "coreMessages" application component
+2014/03/25 21:24:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('announce')
+#1 /usr/share/nginx/html/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /usr/share/nginx/html/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=J%0d%14%d95g%b7%c4%3d%e5c%ac%5b%f2%ca%0f%c9%2a%81%b4&peer_id=-TR2770-xwdsat95kvph&port=51413&uploaded=0&downloaded=0&left=620255619&numwant=80&key=9c2c37b&compact=1&supportcrypto=1&event=started
+---
+2014/03/25 21:24:48 [trace] [system.CModule] Loading "errorHandler" application component
+2014/03/25 21:24:48 [trace] [system.CModule] Loading "widgetFactory" application component
+2014/03/25 21:24:48 [trace] [system.CModule] Loading "clientScript" application component
+2014/03/25 21:25:30 [trace] [system.CModule] Loading "log" application component
+2014/03/25 21:25:30 [trace] [system.CModule] Loading "request" application component
+2014/03/25 21:25:30 [trace] [system.CModule] Loading "urlManager" application component
+2014/03/25 21:25:30 [trace] [system.CModule] Loading "coreMessages" application component
+2014/03/25 21:25:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('scrape')
+#1 /usr/share/nginx/html/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /usr/share/nginx/html/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=J%0d%14%d95g%b7%c4%3d%e5c%ac%5b%f2%ca%0f%c9%2a%81%b4
+---
+2014/03/25 21:25:30 [trace] [system.CModule] Loading "errorHandler" application component
+2014/03/25 21:25:30 [trace] [system.CModule] Loading "widgetFactory" application component
+2014/03/25 21:25:30 [trace] [system.CModule] Loading "clientScript" application component
+2014/03/25 21:30:20 [trace] [system.CModule] Loading "log" application component
+2014/03/25 21:30:20 [trace] [system.CModule] Loading "request" application component
+2014/03/25 21:30:20 [trace] [system.CModule] Loading "urlManager" application component
+2014/03/25 21:30:20 [trace] [system.CModule] Loading "coreMessages" application component
+2014/03/25 21:30:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('announce')
+#1 /usr/share/nginx/html/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /usr/share/nginx/html/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=J%0d%14%d95g%b7%c4%3d%e5c%ac%5b%f2%ca%0f%c9%2a%81%b4&peer_id=-TR2770-xwdsat95kvph&port=51413&uploaded=1952743&downloaded=46137344&left=521650176&numwant=80&key=9c2c37b&compact=1&supportcrypto=1&corrupt=7887235&event=started
+---
+2014/03/25 21:30:20 [trace] [system.CModule] Loading "errorHandler" application component
+2014/03/25 21:30:20 [trace] [system.CModule] Loading "widgetFactory" application component
+2014/03/25 21:30:20 [trace] [system.CModule] Loading "clientScript" application component
+2014/03/25 21:41:22 [trace] [system.CModule] Loading "log" application component
+2014/03/25 21:41:22 [trace] [system.CModule] Loading "request" application component
+2014/03/25 21:41:22 [trace] [system.CModule] Loading "urlManager" application component
+2014/03/25 21:41:22 [trace] [system.CModule] Loading "coreMessages" application component
+2014/03/25 21:41:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('scrape')
+#1 /usr/share/nginx/html/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /usr/share/nginx/html/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=J%0d%14%d95g%b7%c4%3d%e5c%ac%5b%f2%ca%0f%c9%2a%81%b4
+---
+2014/03/25 21:41:22 [trace] [system.CModule] Loading "errorHandler" application component
+2014/03/25 21:41:22 [trace] [system.CModule] Loading "widgetFactory" application component
+2014/03/25 21:41:22 [trace] [system.CModule] Loading "clientScript" application component
+2014/03/25 22:00:42 [trace] [system.CModule] Loading "log" application component
+2014/03/25 22:00:42 [trace] [system.CModule] Loading "request" application component
+2014/03/25 22:00:42 [trace] [system.CModule] Loading "urlManager" application component
+2014/03/25 22:00:42 [trace] [system.CModule] Loading "coreMessages" application component
+2014/03/25 22:00:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('announce')
+#1 /usr/share/nginx/html/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /usr/share/nginx/html/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=J%0d%14%d95g%b7%c4%3d%e5c%ac%5b%f2%ca%0f%c9%2a%81%b4&peer_id=-TR2770-xwdsat95kvph&port=51413&uploaded=32266904&downloaded=544758147&left=49774592&numwant=80&key=9c2c37b&compact=1&supportcrypto=1&corrupt=74996099&event=started
+---
+2014/03/25 22:00:42 [trace] [system.CModule] Loading "errorHandler" application component
+2014/03/25 22:00:42 [trace] [system.CModule] Loading "widgetFactory" application component
+2014/03/25 22:00:42 [trace] [system.CModule] Loading "clientScript" application component
+2014/03/25 22:07:08 [trace] [system.CModule] Loading "log" application component
+2014/03/25 22:07:08 [trace] [system.CModule] Loading "request" application component
+2014/03/25 22:07:08 [trace] [system.CModule] Loading "urlManager" application component
+2014/03/25 22:07:08 [trace] [system.CModule] Loading "coreMessages" application component
+2014/03/25 22:07:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "announce".' in /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('announce')
+#1 /usr/share/nginx/html/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /usr/share/nginx/html/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/announce?info_hash=J%0d%14%d95g%b7%c4%3d%e5c%ac%5b%f2%ca%0f%c9%2a%81%b4&peer_id=-TR2770-xwdsat95kvph&port=51413&uploaded=36837453&downloaded=620255619&left=0&numwant=80&key=9c2c37b&compact=1&supportcrypto=1&corrupt=87579011&event=started
+---
+2014/03/25 22:07:08 [trace] [system.CModule] Loading "errorHandler" application component
+2014/03/25 22:07:08 [trace] [system.CModule] Loading "widgetFactory" application component
+2014/03/25 22:07:08 [trace] [system.CModule] Loading "clientScript" application component
+2014/03/25 22:42:01 [trace] [system.CModule] Loading "log" application component
+2014/03/25 22:42:01 [trace] [system.CModule] Loading "request" application component
+2014/03/25 22:42:01 [trace] [system.CModule] Loading "urlManager" application component
+2014/03/25 22:42:01 [trace] [system.CModule] Loading "coreMessages" application component
+2014/03/25 22:42:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "scrape".' in /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('scrape')
+#1 /usr/share/nginx/html/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /usr/share/nginx/html/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/scrape?info_hash=J%0d%14%d95g%b7%c4%3d%e5c%ac%5b%f2%ca%0f%c9%2a%81%b4
+---
+2014/03/25 22:42:01 [trace] [system.CModule] Loading "errorHandler" application component
+2014/03/25 22:42:01 [trace] [system.CModule] Loading "widgetFactory" application component
+2014/03/25 22:42:01 [trace] [system.CModule] Loading "clientScript" application component
+2014/04/03 20:29:28 [trace] [system.CModule] Loading "log" application component
+2014/04/03 20:29:28 [trace] [system.CModule] Loading "request" application component
+2014/04/03 20:29:28 [trace] [system.CModule] Loading "urlManager" application component
+2014/04/03 20:29:28 [trace] [system.db.ar.CActiveRecord] Season.exists()
+2014/04/03 20:29:28 [trace] [system.CModule] Loading "db" application component
+2014/04/03 20:29:28 [trace] [system.db.CDbConnection] Opening DB connection
+2014/04/03 20:29:28 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `season`
+2014/04/03 20:29:28 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `season`
+2014/04/03 20:29:28 [trace] [system.db.CDbCommand] Querying SQL: SELECT 1 FROM `season` `t` LIMIT 1
+2014/04/03 20:29:28 [trace] [system.db.ar.CActiveRecord] Season.find()
+2014/04/03 20:29:28 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `season` `t` WHERE status=:status LIMIT 1
+2014/04/03 20:29:28 [trace] [system.CModule] Loading "log" application component
+2014/04/03 20:29:28 [trace] [system.CModule] Loading "request" application component
+2014/04/03 20:29:28 [trace] [system.CModule] Loading "urlManager" application component
+2014/04/03 20:29:28 [trace] [system.CModule] Loading "coreMessages" application component
+2014/04/03 20:29:28 [warning] [application] Failed to set unsafe attribute "<id>" of "SeasonForm".
+2014/04/03 20:29:29 [trace] [system.db.ar.CActiveRecord] Season.exists()
+2014/04/03 20:29:29 [trace] [system.CModule] Loading "db" application component
+2014/04/03 20:29:29 [trace] [system.db.CDbConnection] Opening DB connection
+2014/04/03 20:29:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `season`
+2014/04/03 20:29:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `season`
+2014/04/03 20:29:29 [trace] [system.db.CDbCommand] Querying SQL: SELECT 1 FROM `season` `t` WHERE season_id=:season_id LIMIT 1
+2014/04/03 20:29:29 [trace] [system.db.ar.CActiveRecord] Season.findByPk()
+2014/04/03 20:29:29 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `season` `t` WHERE `t`.`season_id`=2 LIMIT 1
+2014/04/03 20:29:29 [trace] [system.db.ar.CActiveRecord] lazy loading Season.weeks
+2014/04/03 20:29:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `week`
+2014/04/03 20:29:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `week`
+2014/04/03 20:29:29 [trace] [system.db.CDbCommand] Querying SQL: SELECT `weeks`.`week_id` AS `t1_c0`, `weeks`.`season_id` AS `t1_c1`, `weeks`.`title` AS `t1_c2`, `weeks`.`status` AS `t1_c3` FROM `week` `weeks`  WHERE (`weeks`.`season_id`=:ypl0)
+2014/04/03 20:29:29 [trace] [system.db.ar.CActiveRecord] Week.find()
+2014/04/03 20:29:29 [trace] [system.db.CDbCommand] Querying SQL: SELECT week_id FROM `week` `t` WHERE season_id=:season_id AND status=:status ORDER BY week_id ASC LIMIT 1
+2014/04/03 20:29:29 [trace] [system.db.ar.CActiveRecord] lazy loading Week.leagueTablesOrdered
+2014/04/03 20:29:29 [trace] [system.CModule] Loading "log" application component
+2014/04/03 20:29:29 [trace] [system.CModule] Loading "request" application component
+2014/04/03 20:29:29 [trace] [system.CModule] Loading "urlManager" application component
+2014/04/03 20:29:29 [trace] [system.CModule] Loading "coreMessages" application component
+2014/04/03 20:29:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /usr/share/nginx/html/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /usr/share/nginx/html/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /usr/share/nginx/html/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/04/03 20:29:29 [trace] [system.CModule] Loading "errorHandler" application component
+2014/04/03 20:29:29 [trace] [system.CModule] Loading "widgetFactory" application component
+2014/04/03 20:29:29 [trace] [system.CModule] Loading "clientScript" application component
+2014/04/03 20:31:24 [trace] [system.CModule] Loading "log" application component
+2014/04/03 20:31:24 [trace] [system.CModule] Loading "request" application component
+2014/04/03 20:31:24 [trace] [system.CModule] Loading "urlManager" application component
+2014/04/03 20:31:24 [trace] [system.CModule] Loading "coreMessages" application component
+2014/04/03 20:31:24 [warning] [application] Failed to set unsafe attribute "<id>" of "SeasonForm".
+2014/04/03 20:31:24 [trace] [system.db.ar.CActiveRecord] Season.exists()
+2014/04/03 20:31:24 [trace] [system.CModule] Loading "db" application component
+2014/04/03 20:31:24 [trace] [system.db.CDbConnection] Opening DB connection
+2014/04/03 20:31:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `season`
+2014/04/03 20:31:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `season`
+2014/04/03 20:31:24 [trace] [system.db.CDbCommand] Querying SQL: SELECT 1 FROM `season` `t` WHERE season_id=:season_id LIMIT 1
+2014/04/03 20:31:24 [trace] [system.db.ar.CActiveRecord] Season.findByPk()
+2014/04/03 20:31:24 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `season` `t` WHERE `t`.`season_id`=2 LIMIT 1
+2014/04/03 20:31:24 [trace] [system.db.ar.CActiveRecord] lazy loading Season.weeks
+2014/04/03 20:31:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `week`
+2014/04/03 20:31:24 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `week`
+2014/04/03 20:31:24 [trace] [system.db.CDbCommand] Querying SQL: SELECT `weeks`.`week_id` AS `t1_c0`, `weeks`.`season_id` AS `t1_c1`, `weeks`.`title` AS `t1_c2`, `weeks`.`status` AS `t1_c3` FROM `week` `weeks`  WHERE (`weeks`.`season_id`=:ypl0)
+2014/04/03 20:31:24 [trace] [system.db.ar.CActiveRecord] Week.find()
+2014/04/03 20:31:24 [trace] [system.db.CDbCommand] Querying SQL: SELECT week_id FROM `week` `t` WHERE season_id=:season_id AND status=:status ORDER BY week_id ASC LIMIT 1
+2014/04/03 20:31:24 [trace] [system.db.ar.CActiveRecord] lazy loading Week.leagueTablesOrdered
