@@ -65,9 +65,9 @@ class Helpers {
 
 		$differencePower 	=	abs($firstTeamPower - $secondTeamPower);
 
-		if($differencePower < 5) 	// deuce
+		if($differencePower < 15) 	// deuce
 		{
-			$goal 	=	Helpers::getGoal(0, 10);
+			$goal 	=	Helpers::getGoal(0, 8);
 
 			$homeTeamGoal	=	$goal;
 			$awayTeamGoal	=	$goal;

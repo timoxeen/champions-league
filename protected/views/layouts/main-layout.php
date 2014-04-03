@@ -39,13 +39,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="<?php echo $this->createUrl('/league'); ?>">Champions League</a>
+          <a class="navbar-brand" href="<?php echo $this->createUrl('/league'); ?>">Main</a>
         </div>
+
         <div class="collapse navbar-collapse">
+        <?php /*
           <ul class="nav navbar-nav">
             <li class="active"><a href="<?php echo $this->createUrl('/league'); ?>">League</a></li>
             <li><a href="<?php echo $this->createUrl('/team'); ?>">Teams</a></li>
           </ul>
+        */ ?>
         </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
     </div><!-- /.navbar -->

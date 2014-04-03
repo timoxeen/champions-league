@@ -190,6 +190,9 @@ class Week extends CActiveRecord
 		$params 	= 	array(':season_id' => $seasonId, ':status' => self::STATUS_COMPLETED);
 		$data 		= 	Week::model()->lastOneWeekIdDesc()->find($condition, $params);
 
+		if(! isset($data->week_id))
+			return NULL;
+
 		return $data->week_id;
 	}
 
@@ -199,6 +202,36 @@ class Week extends CActiveRecord
 		$params 	= 	array(':season_id' => $seasonId, ':status' => self::STATUS_NOT_COMPLETED);
 		$data 		= 	Week::model()->lastOneWeekIdAsc()->find($condition, $params);
 
+		if(! isset($data->week_id))
+			return NULL;
+
 		return $data->week_id;
+	}
+
+	public function getSeasonFirstWeekIdBySeasonId($seasonId)
+	{
+		$condition 	= 	'season_id=:season_id';
+		$params 	= 	array(':season_id' => $seasonId);
+		$data 		= 	Week::model()->lastOneWeekIdAsc()->find($condition, $params);
+
+		return $data->week_id;
+	}
+
+	public function getSeasonLastWeekIdBySeasonId($seasonId)
+	{
+		$condition 	= 	'season_id=:season_id';
+		$params 	= 	array(':season_id' => $seasonId);
+		$data 		= 	Week::model()->lastOneWeekIdDesc()->find($condition, $params);
+
+		return $data->week_id;
+	}
+
+	public function isExistsNotCompletedWeek($seasonId)
+	{
+		$condition 	= 	'season_id=:season_id AND status=:status';
+		$params 	= 	array(':season_id' => $seasonId, ':status' => self::STATUS_NOT_COMPLETED);
+		$isExists 	= 	Week::model()->exists($condition, $params);
+
+		return $isExists;
 	}
 }
