@@ -50,6 +50,14 @@
           </tbody>
         </table>
 
+         <?php if(Week::STATUS_COMPLETED === $week->status) { ?>
+         <p>
+            <button id="edit-week-results-<?php echo $week->week_id; ?>" rel="<?php echo $week->week_id; ?>" class="btn btn-primary btn-lg">
+              Edit results
+            </button>
+         </p>
+         <?php } ?>
+
          <?php 
               if(TRUE === $data->isNextWeekButton 
                 && $data->seasonLastCompletedWeekId === $week->week_id) { 
@@ -115,6 +123,6 @@
 
   </div><!--/row-->
   <?php $weekIndex++; } ?>
-   
- 
 </div><!--/span-->
+
+<?php require_once 'modals/modal-edit-week-results.php'; ?>

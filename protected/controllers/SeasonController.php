@@ -61,6 +61,14 @@ class SeasonController extends CController
         }
 	}
 
+	public function actionAjaxGetWeekResults()
+	{
+		if(! Yii::app()->request->isAjaxRequest)
+			Yii::app()->end();
+
+		die("dfsds");
+	}
+
 	/**
 	 * This is the action to handle external exceptions.
 	 */

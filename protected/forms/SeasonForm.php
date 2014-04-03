@@ -42,7 +42,7 @@ class SeasonForm extends CFormModel
 
         if(Season::STATUS_COMPLETED === $seasonData->status)
         {
-            $this->championTeam     =   LeagueTable::model()->getSeasonChampion($this->seasonId);
+            $this->championTeam                 =   LeagueTable::model()->getSeasonChampion($this->seasonId);
         }
         else 
         {
