@@ -23,20 +23,24 @@ $( document ).ready(function() {
     weekId = jQuery.trim($(this).attr('rel'));
 
     $.ajax({
-      url: "/season/ajaxWeekResults",
+      url: "/season/ajaxGetWeekResults",
       type: "POST",
-      data: {week_id: weekId},
+      data: {weekId: weekId, seasonId:'<?php echo $data->seasonId; ?>'},
       dataType: "json",
       error: function(xhr, status, error) {
         alert('error' + error + " status: " + xhr.status + " message: " + xhr.responseText);
       },
       success: function(data) {
 
+        if(data['error'] == false) {
+          console.log(data['info'])
+          $('#edit-week-results').modal({
+            keyboard: true
+          })          
+        } else {
+          alert(data['error']);
+        }
 
-
-        $('#edit-week-results').modal({
-          keyboard: true
-        })
       }
     });
   });

@@ -1,8 +1,8 @@
 <?php
 class SeasonForm extends CFormModel
 {
+    public $weekId;
 	public $seasonId;
-
 	public $seasonTitle;
     public $seasonStatus;
 	public $weeks;
@@ -12,30 +12,72 @@ class SeasonForm extends CFormModel
     public $isNextWeekButton    =   FALSE;
 
     private $fixture;
+    private $week;
 
 	public function rules()
     {
         return array(
            array('seasonId', 'required', 'on'=>'detail'),
            array('seasonId', 'controlSeason', 'on'=>'detail'),
+           array('seasonId, weekId', 'required', 'on'=>'ajax_get_week_results'),
+           array('seasonId, weekId', 'controlSeason', 'on'=>'ajax_get_week_results'),
+           array('seasonId, weekId', 'controlSeasonWeek', 'on'=>'ajax_get_week_results'),
         );
     }
 
     public function controlSeason()
     {
+        if($this->hasErrors())
+            return;
+
     	$isExists 	=	Season::model()->isExistsBySeasonId($this->seasonId);
 
     	if(FALSE === $isExists)
     	{
-    		Yii::app()->user->setFlash('error', "Böyle bir sezon bulunamadı!");
-    		$this->addError("error", TRUE);
+    		Yii::app()->user->setFlash('season', "Season not found!");
+    		$this->addError("season", "Season not found!");
     	}
+    }
+
+    public function controlSeasonWeek()
+    {
+        if($this->hasErrors())
+            return;
+
+        $weekData   =   Week::model()->getBySeasonIdByWeekId($this->seasonId, $this->weekId);
+
+        if(! isset($weekData->week_id))
+        {
+            $this->addError("week", "Week not found in this season!");
+        }
+        else 
+        {
+            $this->week = $weekData;
+        }
+    }
+
+    public function getWeekFixtures()
+    {
+        $results = array();
+        $i = 0;
+        foreach($this->week->fixtures as $fixture)
+        {
+            $results[$i]['home_team']         =  $fixture->homeTeam->title;
+            $results[$i]['away_team']         =  $fixture->awayTeam->title; 
+            $results[$i]['home_team_goal']    =  $fixture->home_team_goal;
+            $results[$i]['away_team_goal']    =  $fixture->away_team_goal;     
+
+            $i++;
+        }
+
+        return $results;
     }
 
     public function setSeasonData()
     {
     	$seasonData 	=	Season::model()->getBySeasonId($this->seasonId);
 
+        $this->seasonId        =    $seasonData->season_id;
     	$this->seasonTitle     =	$seasonData->title;
         $this->seasonStatus    =    $seasonData->status;
     	$this->weeks	       =	$seasonData->weeks;	

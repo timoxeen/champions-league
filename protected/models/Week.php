@@ -234,4 +234,13 @@ class Week extends CActiveRecord
 
 		return $isExists;
 	}
+
+	public function getBySeasonIdByWeekId($seasonId, $weekId)
+	{
+		$conditions 	= 	'season_id=:season_id AND week_id=:week_id';
+		$params 		= 	array(':season_id' => $seasonId, ':week_id'=>$weekId);
+		$data 			= 	Week::model()->find($conditions, $params);
+
+		return $data;
+	}
 }

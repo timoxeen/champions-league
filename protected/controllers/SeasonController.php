@@ -66,7 +66,22 @@ class SeasonController extends CController
 		if(! Yii::app()->request->isAjaxRequest)
 			Yii::app()->end();
 
-		die("dfsds");
+		$seasonForm 				=	new SeasonForm('ajax_get_week_results');
+		$seasonForm->attributes 	=	$_POST;
+
+		$data['error'] = false;
+
+		if(! $seasonForm->validate())
+		{
+			$data['error'] = Helpers::getModelFirstError($seasonForm);
+			echo CJSON::encode($data);
+			Yii::app()->end();
+		}
+
+		$data['info']	=	$seasonForm->getWeekFixtures();
+
+		echo CJSON::encode($data);
+		Yii::app()->end();
 	}
 
 	/**

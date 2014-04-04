@@ -160,4 +160,17 @@ class Helpers {
 
 		return $results;
 	}
+
+	public static function getModelFirstError($model)
+	{
+		$errors = $model->getErrors();
+
+		foreach($errors as $error)
+		{
+			$firstError = $error[0];
+			break;
+		}
+
+		return $firstError;
+	}
 }
