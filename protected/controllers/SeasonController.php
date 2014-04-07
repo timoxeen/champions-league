@@ -84,6 +84,29 @@ class SeasonController extends CController
 		Yii::app()->end();
 	}
 
+	public function actionAjaxSaveWeekResults()
+	{
+		if(! Yii::app()->request->isAjaxRequest)
+			Yii::app()->end();
+
+		$seasonForm 				=	new SeasonForm('ajax_save_week_results');
+		$seasonForm->attributes 	=	$_POST;
+
+		$data['error'] = false;
+
+		if(! $seasonForm->validate())
+		{
+			$data['error'] = Helpers::getModelFirstError($seasonForm);
+			echo CJSON::encode($data);
+			Yii::app()->end();
+		}
+
+		$data['info']	=	'';
+
+		echo CJSON::encode($data);
+		Yii::app()->end();
+	}
+
 	/**
 	 * This is the action to handle external exceptions.
 	 */

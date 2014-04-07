@@ -19,9 +19,15 @@ class SeasonForm extends CFormModel
         return array(
            array('seasonId', 'required', 'on'=>'detail'),
            array('seasonId', 'controlSeason', 'on'=>'detail'),
+
            array('seasonId, weekId', 'required', 'on'=>'ajax_get_week_results'),
            array('seasonId, weekId', 'controlSeason', 'on'=>'ajax_get_week_results'),
            array('seasonId, weekId', 'controlSeasonWeek', 'on'=>'ajax_get_week_results'),
+
+           array('seasonId, weekId', 'required', 'on'=>'ajax_save_week_results'),
+           array('seasonId, weekId', 'controlSeason', 'on'=>'ajax_save_week_results'),
+           array('seasonId, weekId', 'controlSeasonWeek', 'on'=>'ajax_save_week_results'),
+           array('seasonId, weekId', 'on'=>'ajax_save_week_results')
         );
     }
 
@@ -62,6 +68,7 @@ class SeasonForm extends CFormModel
         $i = 0;
         foreach($this->week->fixtures as $fixture)
         {
+            $results[$i]['fixture_id']        =  $fixture->fixture_id;
             $results[$i]['home_team']         =  $fixture->homeTeam->title;
             $results[$i]['away_team']         =  $fixture->awayTeam->title; 
             $results[$i]['home_team_goal']    =  $fixture->home_team_goal;
