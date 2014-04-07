@@ -13,6 +13,10 @@ class SeasonForm extends CFormModel
 
     private $fixture;
     private $week;
+    private $weekResults = array();
+
+    const GET_NAME_FIXTURE_HOME = 'fixture-home-';
+    const GET_NAME_FIXTURE_AWAY = 'fixture-away-';
 
 	public function rules()
     {
@@ -27,7 +31,7 @@ class SeasonForm extends CFormModel
            array('seasonId, weekId', 'required', 'on'=>'ajax_save_week_results'),
            array('seasonId, weekId', 'controlSeason', 'on'=>'ajax_save_week_results'),
            array('seasonId, weekId', 'controlSeasonWeek', 'on'=>'ajax_save_week_results'),
-           array('seasonId, weekId', 'on'=>'ajax_save_week_results')
+           array('seasonId, weekId', 'controlWeekFixture', 'on'=>'ajax_save_week_results'),
         );
     }
 
@@ -60,6 +64,35 @@ class SeasonForm extends CFormModel
         {
             $this->week = $weekData;
         }
+    }
+
+    public function controlWeekFixture()
+    {
+        if($this->hasErrors())
+            return;
+
+        foreach($_GET as $key => $value)
+        {
+            if(strstr($key, self::GET_NAME_FIXTURE_HOME))
+            {
+                $fixtureType = self::GET_NAME_FIXTURE_HOME;
+                $teamType = 'home';
+            }
+            elseif(strstr($key, self::GET_NAME_FIXTURE_AWAY))
+            {
+                $fixtureType = self::GET_NAME_FIXTURE_AWAY;
+                $teamType = 'away';
+            }
+            else 
+            {
+                continue;
+            }
+
+            $fixtureId = str_replace($fixtureType, '', $key);
+            $this->weekResults[$fixtureId][$teamType]   =   $value;
+        }
+
+        // TODO: control fixture - week
     }
 
     public function getWeekFixtures()

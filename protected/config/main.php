@@ -63,6 +63,7 @@ return array(
 				'league/start-season' 			=> 'league/startSeason',
 				'league/play-all-season' 		=> 'league/playAllSeason',
 				'season/ajaxGetWeekResults' 	=> 'season/ajaxGetWeekResults',
+				'season/ajaxSaveWeekResults' 	=> 'season/ajaxSaveWeekResults',
 				'season/<seasonId>' 			=> 'season/detail/<id>',
 				'season/<seasonId>/next-week' 	=> 'season/playNextWeek/<id>',
 				''

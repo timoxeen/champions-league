@@ -90,7 +90,7 @@ class SeasonController extends CController
 			Yii::app()->end();
 
 		$seasonForm 				=	new SeasonForm('ajax_save_week_results');
-		$seasonForm->attributes 	=	$_POST;
+		$seasonForm->attributes 	=	$_GET;
 
 		$data['error'] = false;
 

@@ -85,7 +85,7 @@ $( document ).ready(function() {
     var formData;
 
     formData = $(resultsFormId).serialize();
-    formData = formData + '&weekId' + weekId + "&seasonId=<?php echo $data->seasonId; ?>";
+    formData = formData + '&weekId=' + weekId + "&seasonId=<?php echo $data->seasonId; ?>";
 
     $.ajax({
       url: "/season/ajaxSaveWeekResults",
@@ -101,7 +101,6 @@ $( document ).ready(function() {
           
           
 
-          });
         } else {
           alert(data['error']);
         }
