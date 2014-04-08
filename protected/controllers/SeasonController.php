@@ -101,7 +101,23 @@ class SeasonController extends CController
 			Yii::app()->end();
 		}
 
-		$data['info']	=	'';
+		$transaction = Yii::app()->db->beginTransaction();
+
+		try {
+
+			$seasonForm->updateFixtureResults();
+			$seasonForm->updateSeasonWeekLeagueTables();			
+
+			$transaction->commit();
+
+
+		} catch (Exception $e) {
+            $transaction->rollback();
+            Yii::log('SeasonController -> actionAjaxSaveWeekResults: '.$e->getMessage(), \CLogger::LEVEL_ERROR, 'core.models.store.Order');
+            die('Error: ' . $e->getMessage());
+        }
+
+		$data['info']	=	$seasonForm->getResults();
 
 		echo CJSON::encode($data);
 		Yii::app()->end();

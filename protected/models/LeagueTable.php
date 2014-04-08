@@ -276,4 +276,11 @@ class LeagueTable extends CActiveRecord
 
 		return $championTeam;
 	}
+
+	public function deleteByWeekId($weekId)
+	{
+		$condition 	=	'week_id=:week_id';
+		$param 		=	array(':week_id'=>$weekId);
+		LeagueTable::model()->deleteAll($condition, $param);
+	}
 }

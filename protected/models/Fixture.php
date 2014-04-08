@@ -203,4 +203,24 @@ class Fixture extends CActiveRecord
 
 		return $data;		
 	}
+
+	public function getByGreaterEqualThanWeekIdByStatusCompleted($weekId)
+	{
+		$conditions 	=	'week_id>=:week_id AND status=:status';
+		$params 		=	array(':week_id'=>$weekId, ':status'=>self::STATUS_COMPLETED);
+		$data 			=	Fixture::model()->findAll($conditions, $params);
+
+		return $data;		
+	}
+
+	public function isExistsByWeekIdFixtureId($weekId, $fixtureId)
+	{
+		$conditions 	=	'week_id=:week_id AND fixture_id=:fixture_id';
+
+		$params 		=	array(':week_id'=>$weekId, ':fixture_id'=>$fixtureId);
+
+		$isExists 		=	Fixture::model()->exists($conditions, $params);
+
+		return $isExists;
+	}
 }

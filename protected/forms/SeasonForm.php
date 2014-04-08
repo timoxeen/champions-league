@@ -92,7 +92,24 @@ class SeasonForm extends CFormModel
             $this->weekResults[$fixtureId][$teamType]   =   $value;
         }
 
-        // TODO: control fixture - week
+        foreach($this->weekResults as $fixtureId => $fixtureRow)
+        {
+            $isExists   =   Fixture::model()->isExistsByWeekIdFixtureId(
+                                                        $this->weekId,
+                                                        $fixtureId
+                                                    );
+
+            if(FALSE === $isExists)
+            {
+                $this->addError("week", "Fixture not found in this week!");
+                break;
+            }
+        }
+    }
+
+    public function getResults()
+    {
+        return $this->weekResults;
     }
 
     public function getWeekFixtures()
@@ -175,5 +192,32 @@ class SeasonForm extends CFormModel
         {
             Season::model()->completeSeason($this->seasonId);
         }
+    }
+
+    public function updateFixtureResults()
+    {
+        foreach($this->weekResults as $fixtureId => $fixtureRow)
+        {
+            $fixture    =   Fixture::model()->findByPk($fixtureId);   
+            $fixture->home_team_goal    =   $fixtureRow['home'];
+            $fixture->away_team_goal    =   $fixtureRow['away'];
+            $fixture->save();
+        }
+    }
+
+    public function updateSeasonWeekLeagueTables()
+    {
+        // get season week list for delete season leauge tables
+        $listSeasonWeek     =   Week::model()->getBySeasonIdByGreaterEqualWeekId($this->seasonId, $this->weekId);
+
+        // delete league table by week
+        foreach($listSeasonWeek as $rowWeek)
+        {
+            LeagueTable::model()->deleteByWeekId($rowWeek->week_id);            
+        }
+
+        $fixtures   =   Fixture::model()->getByGreaterEqualThanWeekIdByStatusCompleted($this->weekId);
+
+        LeagueTable::model()->createSeasonLeagueTableByFixtures($fixtures);
     }
 }
