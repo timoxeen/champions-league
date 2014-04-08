@@ -79,7 +79,7 @@ class LeagueTable extends CActiveRecord
     {
 		return array(
 	            'lastOne'=>array(
-	            	'order' => 'points DESC, goal_difference DESC',
+	            	'order' => 'points DESC, goal_difference DESC, goal_forward DESC',
 	                'limit'=>1,
 	            ),
 	        );

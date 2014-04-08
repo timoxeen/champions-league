@@ -106,9 +106,15 @@ class SeasonController extends CController
 		try {
 
 			$seasonForm->updateFixtureResults();
+			$seasonForm->deleteSeasonWeekLeagueTables();
 			$seasonForm->updateSeasonWeekLeagueTables();			
 
 			$transaction->commit();
+
+			$data['redirectUrl']	=	$seasonForm->getRedirectUrl();
+
+			echo CJSON::encode($data);
+			Yii::app()->end();
 
 
 		} catch (Exception $e) {
@@ -117,10 +123,7 @@ class SeasonController extends CController
             die('Error: ' . $e->getMessage());
         }
 
-		$data['info']	=	$seasonForm->getResults();
-
-		echo CJSON::encode($data);
-		Yii::app()->end();
+		
 	}
 
 	/**

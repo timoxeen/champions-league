@@ -244,10 +244,10 @@ class Week extends CActiveRecord
 		return $data;
 	}
 
-	public function getBySeasonIdByGreaterEqualWeekId($seasonId, $weekId)
+	public function getBySeasonIdByGreaterEqualWeekIdByStatusCompleted($seasonId, $weekId)
 	{
-		$conditions 	= 	'season_id=:season_id AND week_id>=:week_id';
-		$params 		= 	array(':season_id' => $seasonId, ':week_id'=>$weekId);
+		$conditions 	= 	'season_id=:season_id AND week_id>=:week_id AND status=:status';
+		$params 		= 	array(':season_id' => $seasonId, ':week_id'=>$weekId, ':status' => self::STATUS_COMPLETED);
 		$data 			= 	Week::model()->findAll($conditions, $params);
 
 		return $data;

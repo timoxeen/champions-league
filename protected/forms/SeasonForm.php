@@ -14,6 +14,7 @@ class SeasonForm extends CFormModel
     private $fixture;
     private $week;
     private $weekResults = array();
+    private $seasonWeeks;
 
     const GET_NAME_FIXTURE_HOME = 'fixture-home-';
     const GET_NAME_FIXTURE_AWAY = 'fixture-away-';
@@ -107,9 +108,9 @@ class SeasonForm extends CFormModel
         }
     }
 
-    public function getResults()
+    public function getRedirectUrl()
     {
-        return $this->weekResults;
+        return '/season/' . $this->seasonId;
     }
 
     public function getWeekFixtures()
@@ -205,19 +206,32 @@ class SeasonForm extends CFormModel
         }
     }
 
-    public function updateSeasonWeekLeagueTables()
+    public function deleteSeasonWeekLeagueTables()
     {
         // get season week list for delete season leauge tables
-        $listSeasonWeek     =   Week::model()->getBySeasonIdByGreaterEqualWeekId($this->seasonId, $this->weekId);
+        $this->seasonWeeks     =   Week::model()->getBySeasonIdByGreaterEqualWeekIdByStatusCompleted(
+                                                $this->seasonId, 
+                                                $this->weekId
+                                            );
 
         // delete league table by week
-        foreach($listSeasonWeek as $rowWeek)
+        foreach($this->seasonWeeks as $rowWeek)
         {
             LeagueTable::model()->deleteByWeekId($rowWeek->week_id);            
         }
+    }
 
-        $fixtures   =   Fixture::model()->getByGreaterEqualThanWeekIdByStatusCompleted($this->weekId);
+    public function updateSeasonWeekLeagueTables()
+    {
+        foreach($this->seasonWeeks as $rowWeek)
+        {
+            $fixtures   =   Fixture::model()->getByWeekIdByStatusCompleted($rowWeek->week_id);
 
-        LeagueTable::model()->createSeasonLeagueTableByFixtures($fixtures);
+            LeagueTable::model()->createSeasonLeagueTableByFixturesForOneByOne(
+                                            $fixtures, 
+                                            $this->seasonId,
+                                            $rowWeek->week_id
+                                        );
+        }
     }
 }

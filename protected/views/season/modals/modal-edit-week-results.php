@@ -98,9 +98,7 @@ $( document ).ready(function() {
       success: function(data) {
 
         if(data['error'] == false) {
-          
-          
-
+          location.href = data['redirectUrl'];
         } else {
           alert(data['error']);
         }
