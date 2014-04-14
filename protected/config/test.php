@@ -1,5 +1,4 @@
 <?php
-
 return CMap::mergeArray(
 	require(dirname(__FILE__).'/main.php'),
 	array(
@@ -8,18 +7,12 @@ return CMap::mergeArray(
 				'class'=>'system.test.CDbFixtureManager',
 			),
 			'db'=>array(
-				'connectionString'=>'sqlite:'.dirname(__FILE__).'/../data/blog-test.db',
-			),
-			// uncomment the following to use a MySQL database
-			/*
-			'db'=>array(
-				'connectionString' => 'mysql:host=localhost;dbname=blog-test',
+				'connectionString' => 'mysql:host=onurdegerli.db.6611725.hostedresource.com;dbname=onurdegerli',
 				'emulatePrepare' => true,
-				'username' => 'root',
-				'password' => '',
+				'username' => 'onurdegerli',
+				'password' => '7523ba889f11',
 				'charset' => 'utf8',
 			),
-			*/
 		),
 	)
 );
