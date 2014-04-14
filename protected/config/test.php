@@ -7,10 +7,10 @@ return CMap::mergeArray(
 				'class'=>'system.test.CDbFixtureManager',
 			),
 			'db'=>array(
-				'connectionString' => 'mysql:host=onurdegerli.db.6611725.hostedresource.com;dbname=onurdegerli',
+				'connectionString' => 'mysql:host=;dbname=',
 				'emulatePrepare' => true,
-				'username' => 'onurdegerli',
-				'password' => '7523ba889f11',
+				'username' => '',
+				'password' => '',
 				'charset' => 'utf8',
 			),
 		),
