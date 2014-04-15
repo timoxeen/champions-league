@@ -26,7 +26,6 @@ class Helpers {
 
 	public static function scheduler($teams)
 	{
-
 	    if (count($teams)%2 != 0)
 	    {
 	        array_push($teams, "bye");
@@ -45,8 +44,10 @@ class Helpers {
 
 	        if(count($home)+count($away)-1 > 2)
 	        {
-	            array_unshift($away,array_shift(array_splice($home,1,1)));
-	            array_push($home,array_pop($away));
+	        	$temp1 = array_splice($home,1,1);
+	        	$temp2 = array_shift($temp1);
+	            array_unshift($away, $temp2);
+	            array_push($home, array_pop($away));
 	        }
 	    }
 

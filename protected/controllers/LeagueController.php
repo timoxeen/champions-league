@@ -22,7 +22,6 @@ class LeagueController extends CController
 
 	public function actionStartSeason()
 	{
-
 		$this->_controlActiveSeasonAndRedirect();
 
 		// create new season

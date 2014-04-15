@@ -103,6 +103,7 @@
       <?php } ?>
 
       <?php 
+      /*
             if(NULL !== $data->seasonLastCompletedWeekId 
               && $data->seasonLastCompletedWeekId === $week->week_id) { 
       ?>
@@ -119,7 +120,7 @@
            
         </table>
       </div><!--/span-->
-      <?php } ?>
+      <?php } */?>
 
   </div><!--/row-->
   <?php $weekIndex++; } ?>

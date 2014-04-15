@@ -1264,3 +1264,546 @@ HTTP_REFERER=http://www.cl.com/season/1
 2014/04/08 16:43:24 [trace] [system.db.ar.CActiveRecord] Season.findAll()
 2014/04/08 16:43:24 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `season` `t`
 2014/04/08 16:43:24 [trace] [system.CModule] Loading "clientScript" application component
+2014/04/15 08:31:20 [trace] [system.CModule] Loading "log" application component
+2014/04/15 08:31:20 [trace] [system.CModule] Loading "request" application component
+2014/04/15 08:31:20 [trace] [system.CModule] Loading "urlManager" application component
+2014/04/15 08:31:20 [trace] [system.db.ar.CActiveRecord] Season.exists()
+2014/04/15 08:31:20 [trace] [system.CModule] Loading "db" application component
+2014/04/15 08:31:20 [trace] [system.db.CDbConnection] Opening DB connection
+2014/04/15 08:31:20 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `season`
+2014/04/15 08:31:20 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `season`
+2014/04/15 08:31:20 [trace] [system.db.CDbCommand] Querying SQL: SELECT 1 FROM `season` `t` LIMIT 1
+2014/04/15 08:31:20 [trace] [system.db.ar.CActiveRecord] Season.find()
+2014/04/15 08:31:20 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `season` `t` WHERE status=:status LIMIT 1
+2014/04/15 08:31:34 [trace] [system.CModule] Loading "log" application component
+2014/04/15 08:31:34 [trace] [system.CModule] Loading "request" application component
+2014/04/15 08:31:34 [trace] [system.CModule] Loading "urlManager" application component
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] Season.exists()
+2014/04/15 08:31:34 [trace] [system.CModule] Loading "db" application component
+2014/04/15 08:31:34 [trace] [system.db.CDbConnection] Opening DB connection
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `season`
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `season`
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT 1 FROM `season` `t` LIMIT 1
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] Season.find()
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `season` `t` WHERE status=:status LIMIT 1
+2014/04/15 08:31:34 [trace] [system.CModule] Loading "log" application component
+2014/04/15 08:31:34 [trace] [system.CModule] Loading "request" application component
+2014/04/15 08:31:34 [trace] [system.CModule] Loading "urlManager" application component
+2014/04/15 08:31:34 [trace] [system.CModule] Loading "coreMessages" application component
+2014/04/15 08:31:34 [warning] [application] Failed to set unsafe attribute "<id>" of "SeasonForm".
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] Season.exists()
+2014/04/15 08:31:34 [trace] [system.CModule] Loading "db" application component
+2014/04/15 08:31:34 [trace] [system.db.CDbConnection] Opening DB connection
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `season`
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `season`
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT 1 FROM `season` `t` WHERE season_id=:season_id LIMIT 1
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] Season.findByPk()
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `season` `t` WHERE `t`.`season_id`=1 LIMIT 1
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Season.weeks
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `week`
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `week`
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `weeks`.`week_id` AS `t1_c0`, `weeks`.`season_id` AS `t1_c1`, `weeks`.`title` AS `t1_c2`, `weeks`.`status` AS `t1_c3` FROM `week` `weeks`  WHERE (`weeks`.`season_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] Week.find()
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT week_id FROM `week` `t` WHERE season_id=:season_id AND status=:status ORDER BY week_id DESC LIMIT 1
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] Week.exists()
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT 1 FROM `week` `t` WHERE season_id=:season_id AND status=:status LIMIT 1
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Week.fixtures
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `fixture`
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `fixture`
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `fixtures`.`fixture_id` AS `t1_c0`, `fixtures`.`week_id` AS `t1_c1`, `fixtures`.`home_team_id` AS `t1_c2`, `fixtures`.`away_team_id` AS `t1_c3`, `fixtures`.`home_team_goal` AS `t1_c4`, `fixtures`.`away_team_goal` AS `t1_c5`, `fixtures`.`home_team_power` AS `t1_c6`, `fixtures`.`away_team_power` AS `t1_c7`, `fixtures`.`status` AS `t1_c8` FROM `fixture` `fixtures`  WHERE (`fixtures`.`week_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `team`
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `team`
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Week.leagueTablesOrdered
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `league_table`
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `league_table`
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `leagueTablesOrdered`.`league_table_id` AS `t1_c0`, `leagueTablesOrdered`.`week_id` AS `t1_c1`, `leagueTablesOrdered`.`team_id` AS `t1_c2`, `leagueTablesOrdered`.`points` AS `t1_c3`, `leagueTablesOrdered`.`total_win` AS `t1_c4`, `leagueTablesOrdered`.`total_lost` AS `t1_c5`, `leagueTablesOrdered`.`total_deuce` AS `t1_c6`, `leagueTablesOrdered`.`goal_forward` AS `t1_c7`, `leagueTablesOrdered`.`goal_against` AS `t1_c8`, `leagueTablesOrdered`.`goal_difference` AS `t1_c9` FROM `league_table` `leagueTablesOrdered`  WHERE (`leagueTablesOrdered`.`week_id`=:ypl0) ORDER BY points DESC, goal_difference DESC
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Week.fixtures
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `fixtures`.`fixture_id` AS `t1_c0`, `fixtures`.`week_id` AS `t1_c1`, `fixtures`.`home_team_id` AS `t1_c2`, `fixtures`.`away_team_id` AS `t1_c3`, `fixtures`.`home_team_goal` AS `t1_c4`, `fixtures`.`away_team_goal` AS `t1_c5`, `fixtures`.`home_team_power` AS `t1_c6`, `fixtures`.`away_team_power` AS `t1_c7`, `fixtures`.`status` AS `t1_c8` FROM `fixture` `fixtures`  WHERE (`fixtures`.`week_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Week.leagueTablesOrdered
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `leagueTablesOrdered`.`league_table_id` AS `t1_c0`, `leagueTablesOrdered`.`week_id` AS `t1_c1`, `leagueTablesOrdered`.`team_id` AS `t1_c2`, `leagueTablesOrdered`.`points` AS `t1_c3`, `leagueTablesOrdered`.`total_win` AS `t1_c4`, `leagueTablesOrdered`.`total_lost` AS `t1_c5`, `leagueTablesOrdered`.`total_deuce` AS `t1_c6`, `leagueTablesOrdered`.`goal_forward` AS `t1_c7`, `leagueTablesOrdered`.`goal_against` AS `t1_c8`, `leagueTablesOrdered`.`goal_difference` AS `t1_c9` FROM `league_table` `leagueTablesOrdered`  WHERE (`leagueTablesOrdered`.`week_id`=:ypl0) ORDER BY points DESC, goal_difference DESC
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Week.fixtures
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `fixtures`.`fixture_id` AS `t1_c0`, `fixtures`.`week_id` AS `t1_c1`, `fixtures`.`home_team_id` AS `t1_c2`, `fixtures`.`away_team_id` AS `t1_c3`, `fixtures`.`home_team_goal` AS `t1_c4`, `fixtures`.`away_team_goal` AS `t1_c5`, `fixtures`.`home_team_power` AS `t1_c6`, `fixtures`.`away_team_power` AS `t1_c7`, `fixtures`.`status` AS `t1_c8` FROM `fixture` `fixtures`  WHERE (`fixtures`.`week_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Week.leagueTablesOrdered
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `leagueTablesOrdered`.`league_table_id` AS `t1_c0`, `leagueTablesOrdered`.`week_id` AS `t1_c1`, `leagueTablesOrdered`.`team_id` AS `t1_c2`, `leagueTablesOrdered`.`points` AS `t1_c3`, `leagueTablesOrdered`.`total_win` AS `t1_c4`, `leagueTablesOrdered`.`total_lost` AS `t1_c5`, `leagueTablesOrdered`.`total_deuce` AS `t1_c6`, `leagueTablesOrdered`.`goal_forward` AS `t1_c7`, `leagueTablesOrdered`.`goal_against` AS `t1_c8`, `leagueTablesOrdered`.`goal_difference` AS `t1_c9` FROM `league_table` `leagueTablesOrdered`  WHERE (`leagueTablesOrdered`.`week_id`=:ypl0) ORDER BY points DESC, goal_difference DESC
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Week.fixtures
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `fixtures`.`fixture_id` AS `t1_c0`, `fixtures`.`week_id` AS `t1_c1`, `fixtures`.`home_team_id` AS `t1_c2`, `fixtures`.`away_team_id` AS `t1_c3`, `fixtures`.`home_team_goal` AS `t1_c4`, `fixtures`.`away_team_goal` AS `t1_c5`, `fixtures`.`home_team_power` AS `t1_c6`, `fixtures`.`away_team_power` AS `t1_c7`, `fixtures`.`status` AS `t1_c8` FROM `fixture` `fixtures`  WHERE (`fixtures`.`week_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Week.fixtures
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `fixtures`.`fixture_id` AS `t1_c0`, `fixtures`.`week_id` AS `t1_c1`, `fixtures`.`home_team_id` AS `t1_c2`, `fixtures`.`away_team_id` AS `t1_c3`, `fixtures`.`home_team_goal` AS `t1_c4`, `fixtures`.`away_team_goal` AS `t1_c5`, `fixtures`.`home_team_power` AS `t1_c6`, `fixtures`.`away_team_power` AS `t1_c7`, `fixtures`.`status` AS `t1_c8` FROM `fixture` `fixtures`  WHERE (`fixtures`.`week_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Week.fixtures
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `fixtures`.`fixture_id` AS `t1_c0`, `fixtures`.`week_id` AS `t1_c1`, `fixtures`.`home_team_id` AS `t1_c2`, `fixtures`.`away_team_id` AS `t1_c3`, `fixtures`.`home_team_goal` AS `t1_c4`, `fixtures`.`away_team_goal` AS `t1_c5`, `fixtures`.`home_team_power` AS `t1_c6`, `fixtures`.`away_team_power` AS `t1_c7`, `fixtures`.`status` AS `t1_c8` FROM `fixture` `fixtures`  WHERE (`fixtures`.`week_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 08:31:34 [trace] [system.CModule] Loading "widgetFactory" application component
+2014/04/15 08:31:34 [trace] [system.db.ar.CActiveRecord] Season.findAll()
+2014/04/15 08:31:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `season` `t`
+2014/04/15 08:31:35 [trace] [system.CModule] Loading "clientScript" application component
+2014/04/15 08:31:35 [trace] [system.CModule] Loading "log" application component
+2014/04/15 08:31:35 [trace] [system.CModule] Loading "request" application component
+2014/04/15 08:31:35 [trace] [system.CModule] Loading "urlManager" application component
+2014/04/15 08:31:35 [trace] [system.CModule] Loading "coreMessages" application component
+2014/04/15 08:31:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/champions-league/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/champions-league/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/champions-league/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/champions-league/index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/04/15 08:31:35 [trace] [system.CModule] Loading "errorHandler" application component
+2014/04/15 08:31:35 [trace] [system.CModule] Loading "widgetFactory" application component
+2014/04/15 08:31:35 [trace] [system.CModule] Loading "clientScript" application component
+2014/04/15 12:23:47 [trace] [system.CModule] Loading "log" application component
+2014/04/15 12:23:47 [trace] [system.CModule] Loading "request" application component
+2014/04/15 12:23:47 [trace] [system.CModule] Loading "urlManager" application component
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] Season.exists()
+2014/04/15 12:23:47 [trace] [system.CModule] Loading "db" application component
+2014/04/15 12:23:47 [trace] [system.db.CDbConnection] Opening DB connection
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `season`
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `season`
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT 1 FROM `season` `t` LIMIT 1
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] Season.find()
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `season` `t` WHERE status=:status LIMIT 1
+2014/04/15 12:23:47 [trace] [system.CModule] Loading "log" application component
+2014/04/15 12:23:47 [trace] [system.CModule] Loading "request" application component
+2014/04/15 12:23:47 [trace] [system.CModule] Loading "urlManager" application component
+2014/04/15 12:23:47 [trace] [system.CModule] Loading "coreMessages" application component
+2014/04/15 12:23:47 [warning] [application] Failed to set unsafe attribute "<id>" of "SeasonForm".
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] Season.exists()
+2014/04/15 12:23:47 [trace] [system.CModule] Loading "db" application component
+2014/04/15 12:23:47 [trace] [system.db.CDbConnection] Opening DB connection
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `season`
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `season`
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT 1 FROM `season` `t` WHERE season_id=:season_id LIMIT 1
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] Season.findByPk()
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `season` `t` WHERE `t`.`season_id`=1 LIMIT 1
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Season.weeks
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `week`
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `week`
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `weeks`.`week_id` AS `t1_c0`, `weeks`.`season_id` AS `t1_c1`, `weeks`.`title` AS `t1_c2`, `weeks`.`status` AS `t1_c3` FROM `week` `weeks`  WHERE (`weeks`.`season_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] Week.find()
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT week_id FROM `week` `t` WHERE season_id=:season_id AND status=:status ORDER BY week_id DESC LIMIT 1
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] Week.exists()
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT 1 FROM `week` `t` WHERE season_id=:season_id AND status=:status LIMIT 1
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Week.fixtures
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `fixture`
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `fixture`
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `fixtures`.`fixture_id` AS `t1_c0`, `fixtures`.`week_id` AS `t1_c1`, `fixtures`.`home_team_id` AS `t1_c2`, `fixtures`.`away_team_id` AS `t1_c3`, `fixtures`.`home_team_goal` AS `t1_c4`, `fixtures`.`away_team_goal` AS `t1_c5`, `fixtures`.`home_team_power` AS `t1_c6`, `fixtures`.`away_team_power` AS `t1_c7`, `fixtures`.`status` AS `t1_c8` FROM `fixture` `fixtures`  WHERE (`fixtures`.`week_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `team`
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `team`
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Week.leagueTablesOrdered
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `league_table`
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `league_table`
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `leagueTablesOrdered`.`league_table_id` AS `t1_c0`, `leagueTablesOrdered`.`week_id` AS `t1_c1`, `leagueTablesOrdered`.`team_id` AS `t1_c2`, `leagueTablesOrdered`.`points` AS `t1_c3`, `leagueTablesOrdered`.`total_win` AS `t1_c4`, `leagueTablesOrdered`.`total_lost` AS `t1_c5`, `leagueTablesOrdered`.`total_deuce` AS `t1_c6`, `leagueTablesOrdered`.`goal_forward` AS `t1_c7`, `leagueTablesOrdered`.`goal_against` AS `t1_c8`, `leagueTablesOrdered`.`goal_difference` AS `t1_c9` FROM `league_table` `leagueTablesOrdered`  WHERE (`leagueTablesOrdered`.`week_id`=:ypl0) ORDER BY points DESC, goal_difference DESC
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Week.fixtures
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `fixtures`.`fixture_id` AS `t1_c0`, `fixtures`.`week_id` AS `t1_c1`, `fixtures`.`home_team_id` AS `t1_c2`, `fixtures`.`away_team_id` AS `t1_c3`, `fixtures`.`home_team_goal` AS `t1_c4`, `fixtures`.`away_team_goal` AS `t1_c5`, `fixtures`.`home_team_power` AS `t1_c6`, `fixtures`.`away_team_power` AS `t1_c7`, `fixtures`.`status` AS `t1_c8` FROM `fixture` `fixtures`  WHERE (`fixtures`.`week_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Week.leagueTablesOrdered
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `leagueTablesOrdered`.`league_table_id` AS `t1_c0`, `leagueTablesOrdered`.`week_id` AS `t1_c1`, `leagueTablesOrdered`.`team_id` AS `t1_c2`, `leagueTablesOrdered`.`points` AS `t1_c3`, `leagueTablesOrdered`.`total_win` AS `t1_c4`, `leagueTablesOrdered`.`total_lost` AS `t1_c5`, `leagueTablesOrdered`.`total_deuce` AS `t1_c6`, `leagueTablesOrdered`.`goal_forward` AS `t1_c7`, `leagueTablesOrdered`.`goal_against` AS `t1_c8`, `leagueTablesOrdered`.`goal_difference` AS `t1_c9` FROM `league_table` `leagueTablesOrdered`  WHERE (`leagueTablesOrdered`.`week_id`=:ypl0) ORDER BY points DESC, goal_difference DESC
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Week.fixtures
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `fixtures`.`fixture_id` AS `t1_c0`, `fixtures`.`week_id` AS `t1_c1`, `fixtures`.`home_team_id` AS `t1_c2`, `fixtures`.`away_team_id` AS `t1_c3`, `fixtures`.`home_team_goal` AS `t1_c4`, `fixtures`.`away_team_goal` AS `t1_c5`, `fixtures`.`home_team_power` AS `t1_c6`, `fixtures`.`away_team_power` AS `t1_c7`, `fixtures`.`status` AS `t1_c8` FROM `fixture` `fixtures`  WHERE (`fixtures`.`week_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Week.leagueTablesOrdered
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `leagueTablesOrdered`.`league_table_id` AS `t1_c0`, `leagueTablesOrdered`.`week_id` AS `t1_c1`, `leagueTablesOrdered`.`team_id` AS `t1_c2`, `leagueTablesOrdered`.`points` AS `t1_c3`, `leagueTablesOrdered`.`total_win` AS `t1_c4`, `leagueTablesOrdered`.`total_lost` AS `t1_c5`, `leagueTablesOrdered`.`total_deuce` AS `t1_c6`, `leagueTablesOrdered`.`goal_forward` AS `t1_c7`, `leagueTablesOrdered`.`goal_against` AS `t1_c8`, `leagueTablesOrdered`.`goal_difference` AS `t1_c9` FROM `league_table` `leagueTablesOrdered`  WHERE (`leagueTablesOrdered`.`week_id`=:ypl0) ORDER BY points DESC, goal_difference DESC
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Week.fixtures
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `fixtures`.`fixture_id` AS `t1_c0`, `fixtures`.`week_id` AS `t1_c1`, `fixtures`.`home_team_id` AS `t1_c2`, `fixtures`.`away_team_id` AS `t1_c3`, `fixtures`.`home_team_goal` AS `t1_c4`, `fixtures`.`away_team_goal` AS `t1_c5`, `fixtures`.`home_team_power` AS `t1_c6`, `fixtures`.`away_team_power` AS `t1_c7`, `fixtures`.`status` AS `t1_c8` FROM `fixture` `fixtures`  WHERE (`fixtures`.`week_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Week.fixtures
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `fixtures`.`fixture_id` AS `t1_c0`, `fixtures`.`week_id` AS `t1_c1`, `fixtures`.`home_team_id` AS `t1_c2`, `fixtures`.`away_team_id` AS `t1_c3`, `fixtures`.`home_team_goal` AS `t1_c4`, `fixtures`.`away_team_goal` AS `t1_c5`, `fixtures`.`home_team_power` AS `t1_c6`, `fixtures`.`away_team_power` AS `t1_c7`, `fixtures`.`status` AS `t1_c8` FROM `fixture` `fixtures`  WHERE (`fixtures`.`week_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Week.fixtures
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `fixtures`.`fixture_id` AS `t1_c0`, `fixtures`.`week_id` AS `t1_c1`, `fixtures`.`home_team_id` AS `t1_c2`, `fixtures`.`away_team_id` AS `t1_c3`, `fixtures`.`home_team_goal` AS `t1_c4`, `fixtures`.`away_team_goal` AS `t1_c5`, `fixtures`.`home_team_power` AS `t1_c6`, `fixtures`.`away_team_power` AS `t1_c7`, `fixtures`.`status` AS `t1_c8` FROM `fixture` `fixtures`  WHERE (`fixtures`.`week_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:23:47 [trace] [system.CModule] Loading "widgetFactory" application component
+2014/04/15 12:23:47 [trace] [system.db.ar.CActiveRecord] Season.findAll()
+2014/04/15 12:23:47 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `season` `t`
+2014/04/15 12:23:47 [trace] [system.CModule] Loading "clientScript" application component
+2014/04/15 12:36:30 [trace] [system.CModule] Loading "log" application component
+2014/04/15 12:36:30 [trace] [system.CModule] Loading "request" application component
+2014/04/15 12:36:30 [trace] [system.CModule] Loading "urlManager" application component
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] Season.exists()
+2014/04/15 12:36:30 [trace] [system.CModule] Loading "db" application component
+2014/04/15 12:36:30 [trace] [system.db.CDbConnection] Opening DB connection
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `season`
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `season`
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT 1 FROM `season` `t` LIMIT 1
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] Season.find()
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `season` `t` WHERE status=:status LIMIT 1
+2014/04/15 12:36:30 [trace] [system.CModule] Loading "log" application component
+2014/04/15 12:36:30 [trace] [system.CModule] Loading "request" application component
+2014/04/15 12:36:30 [trace] [system.CModule] Loading "urlManager" application component
+2014/04/15 12:36:30 [trace] [system.CModule] Loading "coreMessages" application component
+2014/04/15 12:36:30 [warning] [application] Failed to set unsafe attribute "<id>" of "SeasonForm".
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] Season.exists()
+2014/04/15 12:36:30 [trace] [system.CModule] Loading "db" application component
+2014/04/15 12:36:30 [trace] [system.db.CDbConnection] Opening DB connection
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `season`
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `season`
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT 1 FROM `season` `t` WHERE season_id=:season_id LIMIT 1
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] Season.findByPk()
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `season` `t` WHERE `t`.`season_id`=1 LIMIT 1
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Season.weeks
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `week`
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `week`
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `weeks`.`week_id` AS `t1_c0`, `weeks`.`season_id` AS `t1_c1`, `weeks`.`title` AS `t1_c2`, `weeks`.`status` AS `t1_c3` FROM `week` `weeks`  WHERE (`weeks`.`season_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] Week.find()
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT week_id FROM `week` `t` WHERE season_id=:season_id AND status=:status ORDER BY week_id DESC LIMIT 1
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] Week.exists()
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT 1 FROM `week` `t` WHERE season_id=:season_id AND status=:status LIMIT 1
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Week.fixtures
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `fixture`
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `fixture`
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `fixtures`.`fixture_id` AS `t1_c0`, `fixtures`.`week_id` AS `t1_c1`, `fixtures`.`home_team_id` AS `t1_c2`, `fixtures`.`away_team_id` AS `t1_c3`, `fixtures`.`home_team_goal` AS `t1_c4`, `fixtures`.`away_team_goal` AS `t1_c5`, `fixtures`.`home_team_power` AS `t1_c6`, `fixtures`.`away_team_power` AS `t1_c7`, `fixtures`.`status` AS `t1_c8` FROM `fixture` `fixtures`  WHERE (`fixtures`.`week_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `team`
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `team`
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Week.leagueTablesOrdered
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `league_table`
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `league_table`
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `leagueTablesOrdered`.`league_table_id` AS `t1_c0`, `leagueTablesOrdered`.`week_id` AS `t1_c1`, `leagueTablesOrdered`.`team_id` AS `t1_c2`, `leagueTablesOrdered`.`points` AS `t1_c3`, `leagueTablesOrdered`.`total_win` AS `t1_c4`, `leagueTablesOrdered`.`total_lost` AS `t1_c5`, `leagueTablesOrdered`.`total_deuce` AS `t1_c6`, `leagueTablesOrdered`.`goal_forward` AS `t1_c7`, `leagueTablesOrdered`.`goal_against` AS `t1_c8`, `leagueTablesOrdered`.`goal_difference` AS `t1_c9` FROM `league_table` `leagueTablesOrdered`  WHERE (`leagueTablesOrdered`.`week_id`=:ypl0) ORDER BY points DESC, goal_difference DESC
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Week.fixtures
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `fixtures`.`fixture_id` AS `t1_c0`, `fixtures`.`week_id` AS `t1_c1`, `fixtures`.`home_team_id` AS `t1_c2`, `fixtures`.`away_team_id` AS `t1_c3`, `fixtures`.`home_team_goal` AS `t1_c4`, `fixtures`.`away_team_goal` AS `t1_c5`, `fixtures`.`home_team_power` AS `t1_c6`, `fixtures`.`away_team_power` AS `t1_c7`, `fixtures`.`status` AS `t1_c8` FROM `fixture` `fixtures`  WHERE (`fixtures`.`week_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Week.leagueTablesOrdered
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `leagueTablesOrdered`.`league_table_id` AS `t1_c0`, `leagueTablesOrdered`.`week_id` AS `t1_c1`, `leagueTablesOrdered`.`team_id` AS `t1_c2`, `leagueTablesOrdered`.`points` AS `t1_c3`, `leagueTablesOrdered`.`total_win` AS `t1_c4`, `leagueTablesOrdered`.`total_lost` AS `t1_c5`, `leagueTablesOrdered`.`total_deuce` AS `t1_c6`, `leagueTablesOrdered`.`goal_forward` AS `t1_c7`, `leagueTablesOrdered`.`goal_against` AS `t1_c8`, `leagueTablesOrdered`.`goal_difference` AS `t1_c9` FROM `league_table` `leagueTablesOrdered`  WHERE (`leagueTablesOrdered`.`week_id`=:ypl0) ORDER BY points DESC, goal_difference DESC
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Week.fixtures
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `fixtures`.`fixture_id` AS `t1_c0`, `fixtures`.`week_id` AS `t1_c1`, `fixtures`.`home_team_id` AS `t1_c2`, `fixtures`.`away_team_id` AS `t1_c3`, `fixtures`.`home_team_goal` AS `t1_c4`, `fixtures`.`away_team_goal` AS `t1_c5`, `fixtures`.`home_team_power` AS `t1_c6`, `fixtures`.`away_team_power` AS `t1_c7`, `fixtures`.`status` AS `t1_c8` FROM `fixture` `fixtures`  WHERE (`fixtures`.`week_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Week.leagueTablesOrdered
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `leagueTablesOrdered`.`league_table_id` AS `t1_c0`, `leagueTablesOrdered`.`week_id` AS `t1_c1`, `leagueTablesOrdered`.`team_id` AS `t1_c2`, `leagueTablesOrdered`.`points` AS `t1_c3`, `leagueTablesOrdered`.`total_win` AS `t1_c4`, `leagueTablesOrdered`.`total_lost` AS `t1_c5`, `leagueTablesOrdered`.`total_deuce` AS `t1_c6`, `leagueTablesOrdered`.`goal_forward` AS `t1_c7`, `leagueTablesOrdered`.`goal_against` AS `t1_c8`, `leagueTablesOrdered`.`goal_difference` AS `t1_c9` FROM `league_table` `leagueTablesOrdered`  WHERE (`leagueTablesOrdered`.`week_id`=:ypl0) ORDER BY points DESC, goal_difference DESC
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Week.fixtures
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `fixtures`.`fixture_id` AS `t1_c0`, `fixtures`.`week_id` AS `t1_c1`, `fixtures`.`home_team_id` AS `t1_c2`, `fixtures`.`away_team_id` AS `t1_c3`, `fixtures`.`home_team_goal` AS `t1_c4`, `fixtures`.`away_team_goal` AS `t1_c5`, `fixtures`.`home_team_power` AS `t1_c6`, `fixtures`.`away_team_power` AS `t1_c7`, `fixtures`.`status` AS `t1_c8` FROM `fixture` `fixtures`  WHERE (`fixtures`.`week_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Week.fixtures
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `fixtures`.`fixture_id` AS `t1_c0`, `fixtures`.`week_id` AS `t1_c1`, `fixtures`.`home_team_id` AS `t1_c2`, `fixtures`.`away_team_id` AS `t1_c3`, `fixtures`.`home_team_goal` AS `t1_c4`, `fixtures`.`away_team_goal` AS `t1_c5`, `fixtures`.`home_team_power` AS `t1_c6`, `fixtures`.`away_team_power` AS `t1_c7`, `fixtures`.`status` AS `t1_c8` FROM `fixture` `fixtures`  WHERE (`fixtures`.`week_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Week.fixtures
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `fixtures`.`fixture_id` AS `t1_c0`, `fixtures`.`week_id` AS `t1_c1`, `fixtures`.`home_team_id` AS `t1_c2`, `fixtures`.`away_team_id` AS `t1_c3`, `fixtures`.`home_team_goal` AS `t1_c4`, `fixtures`.`away_team_goal` AS `t1_c5`, `fixtures`.`home_team_power` AS `t1_c6`, `fixtures`.`away_team_power` AS `t1_c7`, `fixtures`.`status` AS `t1_c8` FROM `fixture` `fixtures`  WHERE (`fixtures`.`week_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:36:30 [trace] [system.CModule] Loading "widgetFactory" application component
+2014/04/15 12:36:30 [trace] [system.db.ar.CActiveRecord] Season.findAll()
+2014/04/15 12:36:30 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `season` `t`
+2014/04/15 12:36:30 [trace] [system.CModule] Loading "clientScript" application component
+2014/04/15 12:37:23 [trace] [system.CModule] Loading "log" application component
+2014/04/15 12:37:23 [trace] [system.CModule] Loading "request" application component
+2014/04/15 12:37:23 [trace] [system.CModule] Loading "urlManager" application component
+2014/04/15 12:37:23 [trace] [system.CModule] Loading "coreMessages" application component
+2014/04/15 12:37:23 [warning] [application] Failed to set unsafe attribute "<id>" of "SeasonForm".
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] Season.exists()
+2014/04/15 12:37:23 [trace] [system.CModule] Loading "db" application component
+2014/04/15 12:37:23 [trace] [system.db.CDbConnection] Opening DB connection
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `season`
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `season`
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT 1 FROM `season` `t` WHERE season_id=:season_id LIMIT 1
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] Season.findByPk()
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `season` `t` WHERE `t`.`season_id`=1 LIMIT 1
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Season.weeks
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `week`
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `week`
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `weeks`.`week_id` AS `t1_c0`, `weeks`.`season_id` AS `t1_c1`, `weeks`.`title` AS `t1_c2`, `weeks`.`status` AS `t1_c3` FROM `week` `weeks`  WHERE (`weeks`.`season_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] Week.find()
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT week_id FROM `week` `t` WHERE season_id=:season_id AND status=:status ORDER BY week_id DESC LIMIT 1
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] Week.exists()
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT 1 FROM `week` `t` WHERE season_id=:season_id AND status=:status LIMIT 1
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Week.fixtures
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `fixture`
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `fixture`
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `fixtures`.`fixture_id` AS `t1_c0`, `fixtures`.`week_id` AS `t1_c1`, `fixtures`.`home_team_id` AS `t1_c2`, `fixtures`.`away_team_id` AS `t1_c3`, `fixtures`.`home_team_goal` AS `t1_c4`, `fixtures`.`away_team_goal` AS `t1_c5`, `fixtures`.`home_team_power` AS `t1_c6`, `fixtures`.`away_team_power` AS `t1_c7`, `fixtures`.`status` AS `t1_c8` FROM `fixture` `fixtures`  WHERE (`fixtures`.`week_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `team`
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `team`
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Week.leagueTablesOrdered
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW FULL COLUMNS FROM `league_table`
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `league_table`
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `leagueTablesOrdered`.`league_table_id` AS `t1_c0`, `leagueTablesOrdered`.`week_id` AS `t1_c1`, `leagueTablesOrdered`.`team_id` AS `t1_c2`, `leagueTablesOrdered`.`points` AS `t1_c3`, `leagueTablesOrdered`.`total_win` AS `t1_c4`, `leagueTablesOrdered`.`total_lost` AS `t1_c5`, `leagueTablesOrdered`.`total_deuce` AS `t1_c6`, `leagueTablesOrdered`.`goal_forward` AS `t1_c7`, `leagueTablesOrdered`.`goal_against` AS `t1_c8`, `leagueTablesOrdered`.`goal_difference` AS `t1_c9` FROM `league_table` `leagueTablesOrdered`  WHERE (`leagueTablesOrdered`.`week_id`=:ypl0) ORDER BY points DESC, goal_difference DESC
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Week.fixtures
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `fixtures`.`fixture_id` AS `t1_c0`, `fixtures`.`week_id` AS `t1_c1`, `fixtures`.`home_team_id` AS `t1_c2`, `fixtures`.`away_team_id` AS `t1_c3`, `fixtures`.`home_team_goal` AS `t1_c4`, `fixtures`.`away_team_goal` AS `t1_c5`, `fixtures`.`home_team_power` AS `t1_c6`, `fixtures`.`away_team_power` AS `t1_c7`, `fixtures`.`status` AS `t1_c8` FROM `fixture` `fixtures`  WHERE (`fixtures`.`week_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Week.leagueTablesOrdered
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `leagueTablesOrdered`.`league_table_id` AS `t1_c0`, `leagueTablesOrdered`.`week_id` AS `t1_c1`, `leagueTablesOrdered`.`team_id` AS `t1_c2`, `leagueTablesOrdered`.`points` AS `t1_c3`, `leagueTablesOrdered`.`total_win` AS `t1_c4`, `leagueTablesOrdered`.`total_lost` AS `t1_c5`, `leagueTablesOrdered`.`total_deuce` AS `t1_c6`, `leagueTablesOrdered`.`goal_forward` AS `t1_c7`, `leagueTablesOrdered`.`goal_against` AS `t1_c8`, `leagueTablesOrdered`.`goal_difference` AS `t1_c9` FROM `league_table` `leagueTablesOrdered`  WHERE (`leagueTablesOrdered`.`week_id`=:ypl0) ORDER BY points DESC, goal_difference DESC
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Week.fixtures
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `fixtures`.`fixture_id` AS `t1_c0`, `fixtures`.`week_id` AS `t1_c1`, `fixtures`.`home_team_id` AS `t1_c2`, `fixtures`.`away_team_id` AS `t1_c3`, `fixtures`.`home_team_goal` AS `t1_c4`, `fixtures`.`away_team_goal` AS `t1_c5`, `fixtures`.`home_team_power` AS `t1_c6`, `fixtures`.`away_team_power` AS `t1_c7`, `fixtures`.`status` AS `t1_c8` FROM `fixture` `fixtures`  WHERE (`fixtures`.`week_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Week.leagueTablesOrdered
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `leagueTablesOrdered`.`league_table_id` AS `t1_c0`, `leagueTablesOrdered`.`week_id` AS `t1_c1`, `leagueTablesOrdered`.`team_id` AS `t1_c2`, `leagueTablesOrdered`.`points` AS `t1_c3`, `leagueTablesOrdered`.`total_win` AS `t1_c4`, `leagueTablesOrdered`.`total_lost` AS `t1_c5`, `leagueTablesOrdered`.`total_deuce` AS `t1_c6`, `leagueTablesOrdered`.`goal_forward` AS `t1_c7`, `leagueTablesOrdered`.`goal_against` AS `t1_c8`, `leagueTablesOrdered`.`goal_difference` AS `t1_c9` FROM `league_table` `leagueTablesOrdered`  WHERE (`leagueTablesOrdered`.`week_id`=:ypl0) ORDER BY points DESC, goal_difference DESC
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading LeagueTable.team
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `team`.`team_id` AS `t1_c0`, `team`.`title` AS `t1_c1` FROM `team` `team`  WHERE (`team`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Week.fixtures
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `fixtures`.`fixture_id` AS `t1_c0`, `fixtures`.`week_id` AS `t1_c1`, `fixtures`.`home_team_id` AS `t1_c2`, `fixtures`.`away_team_id` AS `t1_c3`, `fixtures`.`home_team_goal` AS `t1_c4`, `fixtures`.`away_team_goal` AS `t1_c5`, `fixtures`.`home_team_power` AS `t1_c6`, `fixtures`.`away_team_power` AS `t1_c7`, `fixtures`.`status` AS `t1_c8` FROM `fixture` `fixtures`  WHERE (`fixtures`.`week_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Week.fixtures
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `fixtures`.`fixture_id` AS `t1_c0`, `fixtures`.`week_id` AS `t1_c1`, `fixtures`.`home_team_id` AS `t1_c2`, `fixtures`.`away_team_id` AS `t1_c3`, `fixtures`.`home_team_goal` AS `t1_c4`, `fixtures`.`away_team_goal` AS `t1_c5`, `fixtures`.`home_team_power` AS `t1_c6`, `fixtures`.`away_team_power` AS `t1_c7`, `fixtures`.`status` AS `t1_c8` FROM `fixture` `fixtures`  WHERE (`fixtures`.`week_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Week.fixtures
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `fixtures`.`fixture_id` AS `t1_c0`, `fixtures`.`week_id` AS `t1_c1`, `fixtures`.`home_team_id` AS `t1_c2`, `fixtures`.`away_team_id` AS `t1_c3`, `fixtures`.`home_team_goal` AS `t1_c4`, `fixtures`.`away_team_goal` AS `t1_c5`, `fixtures`.`home_team_power` AS `t1_c6`, `fixtures`.`away_team_power` AS `t1_c7`, `fixtures`.`status` AS `t1_c8` FROM `fixture` `fixtures`  WHERE (`fixtures`.`week_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.homeTeam
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `homeTeam`.`team_id` AS `t1_c0`, `homeTeam`.`title` AS `t1_c1` FROM `team` `homeTeam`  WHERE (`homeTeam`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] lazy loading Fixture.awayTeam
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT `awayTeam`.`team_id` AS `t1_c0`, `awayTeam`.`title` AS `t1_c1` FROM `team` `awayTeam`  WHERE (`awayTeam`.`team_id`=:ypl0)
+2014/04/15 12:37:23 [trace] [system.CModule] Loading "widgetFactory" application component
+2014/04/15 12:37:23 [trace] [system.db.ar.CActiveRecord] Season.findAll()
+2014/04/15 12:37:23 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `season` `t`
+2014/04/15 12:37:23 [trace] [system.CModule] Loading "clientScript" application component
